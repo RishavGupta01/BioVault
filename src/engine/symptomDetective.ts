@@ -72,16 +72,17 @@ const DANGEROUS_COMBOS: Array<{ items: string[]; mechanism: string; type: string
 // ─── Core Detective Logic ───────────────────────────────────────────────────
 
 /**
- * Investigate potential causes of stomach discomfort by analyzing
+ * Investigate potential causes of symptoms by analyzing
  * the timeline entries from the last 180 minutes.
  * 
  * Step 1: Query local IndexedDB for recent entries
- * Step 2: Boolean intersect against known gastric irritants
+ * Step 2: Boolean intersect against known gastric irritants (if symptom is gastric-related)
  * Step 3: Check for dangerous combinations
- * Step 4: Return flag for edge API if no local matches
+ * Step 4: Return flag for edge API if no local matches or custom symptom
  */
-export async function investigateStomachAche(
-  profileId: string
+export async function investigateSymptom(
+  profileId: string,
+  symptom: string
 ): Promise<DiagnosticResult> {
   // Step 1: Calculate time window (last 180 minutes)
   const now = new Date();
@@ -103,36 +104,46 @@ export async function investigateStomachAche(
   const warnings: GastricWarning[] = [];
   const interactions: InteractionWarning[] = [];
 
-  // Step 2: Boolean intersect against gastric irritant list
-  for (const entry of recentItems) {
-    const genericLower = entry.generic_resolved.toLowerCase();
-    const irritant = GASTRIC_IRRITANTS[genericLower];
+  const symptomLower = symptom.toLowerCase();
+  const isGastricSymptom = 
+    symptomLower.includes('stomach') || 
+    symptomLower.includes('gastric') || 
+    symptomLower.includes('acid') || 
+    symptomLower.includes('heartburn') || 
+    symptomLower.includes('nausea') ||
+    symptomLower.includes('vomit');
 
-    if (irritant) {
-      warnings.push({
-        item_name: entry.item_name,
-        generic_name: entry.generic_resolved,
-        mechanism: irritant.mechanism,
-        confidence: irritant.confidence,
-        scheduled_time: entry.scheduled_time,
-      });
-    }
+  // Step 2: Boolean intersect against gastric irritant list (only if it is a gastric symptom)
+  if (isGastricSymptom) {
+    for (const entry of recentItems) {
+      const genericLower = entry.generic_resolved.toLowerCase();
+      const irritant = GASTRIC_IRRITANTS[genericLower];
 
-    // Check if taken with alcohol (vehicle)
-    if (entry.vehicle === 'alcohol' && GASTRIC_IRRITANTS[genericLower]) {
-      warnings.push({
-        item_name: entry.item_name,
-        generic_name: entry.generic_resolved,
-        mechanism: `${entry.generic_resolved} taken with alcohol significantly increases gastric irritation risk.`,
-        confidence: 'HIGH',
-        scheduled_time: entry.scheduled_time,
-      });
+      if (irritant) {
+        warnings.push({
+          item_name: entry.item_name,
+          generic_name: entry.generic_resolved,
+          mechanism: irritant.mechanism,
+          confidence: irritant.confidence,
+          scheduled_time: entry.scheduled_time,
+        });
+      }
+
+      // Check if taken with alcohol (vehicle)
+      if (entry.vehicle === 'alcohol' && GASTRIC_IRRITANTS[genericLower]) {
+        warnings.push({
+          item_name: entry.item_name,
+          generic_name: entry.generic_resolved,
+          mechanism: `${entry.generic_resolved} taken with alcohol significantly increases gastric irritation risk.`,
+          confidence: 'HIGH',
+          scheduled_time: entry.scheduled_time,
+        });
+      }
     }
   }
 
   // Step 3: Check for dangerous combinations among recent items
   const recentGenerics = recentItems.map((e) => e.generic_resolved.toLowerCase());
-  // Also include vehicles as pseudo-items for combo checking
   const recentVehicles = recentItems
     .filter((e) => e.vehicle === 'alcohol' || e.vehicle === 'coffee')
     .map((e) => e.vehicle);
@@ -155,7 +166,9 @@ export async function investigateStomachAche(
   // Step 4: Determine severity and whether AI analysis is needed
   const hasHighConfidence = warnings.some((w) => w.confidence === 'HIGH');
   const hasCriticalInteraction = interactions.some((i) => i.interaction_type === 'CRITICAL');
-  const needsAI = warnings.length === 0 && interactions.length === 0;
+  
+  // For custom non-gastric symptoms, always run AI analysis to get full context
+  const needsAI = !isGastricSymptom || (warnings.length === 0 && interactions.length === 0);
 
   let severity: 'MILD' | 'MODERATE' | 'SEVERE';
   if (hasCriticalInteraction) severity = 'SEVERE';
