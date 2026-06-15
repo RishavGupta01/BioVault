@@ -6,8 +6,8 @@ import type { Vehicle, Category, TimelineItemUI } from '@/types/ui';
 
 interface TimelineNodeProps {
   item: TimelineItemUI;
-  onDragStart?: () => void;
-  onDragEnd?: () => void;
+  onDragStart?: (e: React.DragEvent) => void;
+  onDragEnd?: (e: React.DragEvent) => void;
   onClick?: () => void;
   className?: string;
 }
@@ -42,11 +42,9 @@ export default function TimelineNode({
   return (
     <motion.div
       className={`timeline-node ${item.isGhost ? 'timeline-node--ghost' : ''} ${className}`}
-      drag="y"
-      dragConstraints={{ top: 0, bottom: 0 }}
-      dragElastic={0.1}
-      onDragStart={onDragStart}
-      onDragEnd={onDragEnd}
+      draggable={!item.isGhost}
+      onDragStart={onDragStart as any}
+      onDragEnd={onDragEnd as any}
       onClick={onClick}
       whileHover={{ scale: 1.01 }}
       whileTap={{ scale: 0.99 }}
@@ -56,7 +54,7 @@ export default function TimelineNode({
       transition={{ type: 'spring', stiffness: 300, damping: 25 }}
     >
       {/* Conflict badges */}
-      {item.conflicts && item.conflicts > 0 && (
+      {(item.conflicts ?? 0) > 0 && (
         <div className="timeline-node__badges">
           <span className="badge badge--critical">{item.conflicts}</span>
         </div>

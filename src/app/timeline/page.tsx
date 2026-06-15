@@ -17,7 +17,24 @@ const HOURS = Array.from({ length: 18 }, (_, i) => i + 5); // 5 AM to 10 PM
 
 export default function TimelinePage() {
   const router = useRouter();
-  const { timelineEntries, wellnessScore, conflicts, boosts, scoreBreakdown, loadEntries, removeEntry, isDragging, shadowScore } = useTimelineStore();
+  const { 
+    timelineEntries, 
+    wellnessScore, 
+    conflicts, 
+    boosts, 
+    scoreBreakdown, 
+    loadEntries, 
+    removeEntry, 
+    isDragging, 
+    shadowScore,
+    shadowTimeline,
+    startDrag,
+    updateShadow,
+    commitDrag,
+    abortDrag
+  } = useTimelineStore();
+  
+  const [draggingId, setDraggingId] = useState<string | null>(null);
   const [hoveredHour, setHoveredHour] = useState<number | null>(null);
 
   useEffect(() => { loadEntries('default'); }, [loadEntries]);
@@ -25,6 +42,52 @@ export default function TimelinePage() {
   const displayScore = isDragging && shadowScore ? shadowScore.score : wellnessScore;
   const displayConflicts = isDragging && shadowScore ? shadowScore.conflicts : conflicts;
   const displayBoosts = isDragging && shadowScore ? shadowScore.boosts : boosts;
+  const displayBreakdown = isDragging && shadowScore ? shadowScore.breakdown : scoreBreakdown;
+  const displayEntries = isDragging && shadowTimeline ? shadowTimeline : timelineEntries;
+
+  const handleDragStart = (e: React.DragEvent, id: string) => {
+    setDraggingId(id);
+    startDrag();
+    e.dataTransfer.setData('text/plain', id);
+  };
+
+  const handleDragEnd = () => {
+    setDraggingId(null);
+    abortDrag();
+  };
+
+  const handleDragOver = (e: React.DragEvent, hour: number) => {
+    e.preventDefault();
+    if (draggingId && shadowTimeline) {
+      const timeStr = `${hour.toString().padStart(2, '0')}:00`;
+      const updated = shadowTimeline.map(entry => {
+        if (String(entry.id) === draggingId) {
+          return { ...entry, scheduled_time: timeStr };
+        }
+        return entry;
+      });
+      const currentEntry = shadowTimeline.find(entry => String(entry.id) === draggingId);
+      if (currentEntry && currentEntry.scheduled_time !== timeStr) {
+        updateShadow(updated);
+      }
+    }
+  };
+
+  const handleDrop = async (e: React.DragEvent, hour: number) => {
+    e.preventDefault();
+    if (draggingId && shadowTimeline) {
+      const timeStr = `${hour.toString().padStart(2, '0')}:00`;
+      const updated = shadowTimeline.map(entry => {
+        if (String(entry.id) === draggingId) {
+          return { ...entry, scheduled_time: timeStr };
+        }
+        return entry;
+      });
+      updateShadow(updated);
+      await commitDrag();
+      setDraggingId(null);
+    }
+  };
 
   const rightPanel = (
     <div style={{ padding: 'var(--spacing-panel)', overflowY: 'auto' }}>
@@ -32,7 +95,7 @@ export default function TimelinePage() {
         <ScoreRing score={displayScore} size="sm" />
       </div>
       <h4 style={{ fontSize: 'var(--font-body)', fontWeight: 600, marginBottom: 12 }}>Score Breakdown</h4>
-      {Object.entries(scoreBreakdown).map(([key, value]) => (
+      {Object.entries(displayBreakdown).map(([key, value]) => (
         <div key={key} style={{ marginBottom: 8 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 'var(--font-caption)', marginBottom: 4 }}>
             <span style={{ textTransform: 'capitalize' }}>{key}</span>
@@ -76,15 +139,26 @@ export default function TimelinePage() {
         {/* Timeline Grid */}
         <div style={{ position: 'relative', minHeight: 600 }}>
           {HOURS.map((hour) => {
-            const timeStr = `${hour.toString().padStart(2, '0')}:00`;
-            const hourEntries = timelineEntries.filter(e => {
+            const hourEntries = displayEntries.filter(e => {
               const h = parseInt(e.scheduled_time.split(':')[0]);
               return h === hour;
             });
             return (
-              <div key={hour} style={{ display: 'flex', borderBottom: '1px solid var(--color-surface-container)', minHeight: 64, transition: 'background 0.15s' }}
-                onMouseEnter={() => setHoveredHour(hour)} onMouseLeave={() => setHoveredHour(null)}
-                className={hoveredHour === hour ? 'hour-row-hover' : ''}>
+              <div 
+                key={hour} 
+                style={{ 
+                  display: 'flex', 
+                  borderBottom: '1px solid var(--color-surface-container)', 
+                  minHeight: 64, 
+                  transition: 'background 0.15s',
+                  backgroundColor: hoveredHour === hour && isDragging ? 'rgba(79, 70, 229, 0.05)' : 'transparent'
+                }}
+                onDragOver={(e) => handleDragOver(e, hour)}
+                onDrop={(e) => handleDrop(e, hour)}
+                onMouseEnter={() => setHoveredHour(hour)} 
+                onMouseLeave={() => setHoveredHour(null)}
+                className={hoveredHour === hour ? 'hour-row-hover' : ''}
+              >
                 <div style={{ width: 80, flexShrink: 0, padding: '8px 16px 8px 0', textAlign: 'right', fontSize: 'var(--font-caption)', color: 'var(--color-outline)', fontWeight: 500 }}>
                   {hour <= 12 ? `${hour}:00 AM` : `${hour - 12}:00 PM`}
                 </div>
@@ -110,6 +184,8 @@ export default function TimelinePage() {
                       <TimelineNode
                         key={entry.id}
                         item={itemUI}
+                        onDragStart={(e) => entry.id && handleDragStart(e, String(entry.id))}
+                        onDragEnd={handleDragEnd}
                         onClick={() => entry.id && removeEntry(entry.id)}
                       />
                     );
@@ -120,7 +196,7 @@ export default function TimelinePage() {
           })}
         </div>
 
-        {timelineEntries.length === 0 && (
+        {displayEntries.length === 0 && (
           <GlassCard style={{ textAlign: 'center', padding: 48, borderRadius: 'var(--radius-lg)', marginTop: 24 }}>
             <span className="material-symbols-outlined" style={{ fontSize: 64, color: 'var(--color-outline)', opacity: 0.3, marginBottom: 16, display: 'block' }}>timeline</span>
             <h3 style={{ fontSize: 'var(--font-h3)', marginBottom: 8 }}>Your timeline is empty</h3>
