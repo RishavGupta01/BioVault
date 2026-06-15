@@ -1,5 +1,6 @@
 import type { UserTimelineEntry } from '@/db/schema';
 import type { ClashRuleParsed, BoostRuleParsed } from '@/engine/validation';
+import { exactLookup } from '@/engine/fuzzyMatcher';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -58,17 +59,152 @@ export function chronologicalSort(entries: UserTimelineEntry[]): UserTimelineEnt
 
 // ─── Clash Rule Lookup ──────────────────────────────────────────────────────
 
+// ─── Class and Group Key Expansion ───────────────────────────────────────────
+
+function getItemKeys(genericName: string): string[] {
+  const keys = new Set<string>();
+  const normalized = genericName.toLowerCase().trim();
+
+  // Always include the item itself
+  keys.add(normalized);
+
+  // Try to find the exact database item
+  const item = exactLookup(normalized);
+  if (item) {
+    // 1. Category-specific classifications
+    if (item.category === 'medicine') {
+      const drugClass = item.drug_class ? item.drug_class.toLowerCase().trim() : '';
+      if (drugClass) {
+        if (drugClass.includes('ssri')) keys.add('ssri');
+        if (drugClass.includes('proton pump inhibitor') || drugClass.includes('ppi')) keys.add('ppi');
+        if (drugClass.includes('nsaid')) keys.add('nsaid');
+        if (drugClass.includes('statin')) keys.add('statins');
+        if (drugClass.includes('antacid')) keys.add('antacids');
+        if (drugClass.includes('mao inhibitor') || drugClass.includes('maoi')) keys.add('mao_inhibitor');
+      }
+    } else if (item.category === 'supplement') {
+      const type = item.type ? item.type.toLowerCase().trim() : '';
+      if (type === 'probiotic') {
+        keys.add('probiotics');
+      }
+      if (type === 'mineral') {
+        if (normalized.includes('calcium')) {
+          keys.add('calcium_carbonate');
+          keys.add('dairy');
+        }
+        if (normalized.includes('iron')) {
+          keys.add('iron_sulfate');
+        }
+        if (normalized.includes('zinc')) {
+          keys.add('zinc');
+        }
+      }
+    } else if (item.category === 'food') {
+      const foodGroup = item.food_group ? item.food_group.toLowerCase().trim() : '';
+      if (foodGroup === 'dairy') {
+        keys.add('dairy');
+      } else if (foodGroup === 'beverage_alcoholic') {
+        keys.add('alcohol');
+        keys.add('beverage_alcoholic');
+      } else if (foodGroup === 'beverage_caffeinated') {
+        keys.add('caffeine');
+        if (normalized.includes('coffee')) {
+          keys.add('coffee');
+          keys.add('coffee_black');
+        }
+        if (normalized.includes('tea')) {
+          keys.add('tea');
+        }
+      }
+
+      // 2. Interaction Profile classifications
+      const profile = item.interaction_profile ? item.interaction_profile.toLowerCase().trim() : '';
+      if (profile === 'cyp3a4_inhibitor') {
+        keys.add('grapefruit');
+      } else if (profile === 'calcium_source') {
+        keys.add('calcium_carbonate');
+        keys.add('dairy');
+      } else if (profile === 'iron_source') {
+        keys.add('iron_sulfate');
+      } else if (profile === 'tyramine_source') {
+        keys.add('tyramine');
+      } else if (profile === 'fiber_rich') {
+        keys.add('fiber');
+      }
+    }
+  }
+
+  // Fallback direct name matching for items whose exact entry might not be resolved but contain keywords
+  if (normalized.includes('milk') || normalized.includes('cheese') || normalized.includes('yogurt') || normalized.includes('kefir') || normalized === 'dairy') {
+    keys.add('dairy');
+    keys.add('calcium_carbonate');
+  }
+  if (normalized.includes('alcohol') || normalized.includes('wine') || normalized.includes('beer') || normalized.includes('spirits')) {
+    keys.add('alcohol');
+    keys.add('beverage_alcoholic');
+  }
+  if (normalized.includes('seville') || normalized.includes('pomelo') || normalized.includes('grapefruit')) {
+    keys.add('grapefruit');
+  }
+  if (normalized.includes('coffee')) {
+    keys.add('caffeine');
+    keys.add('coffee');
+    keys.add('coffee_black');
+  }
+  if (normalized.includes('tea') && !normalized.includes('herbal')) {
+    keys.add('caffeine');
+    keys.add('tea');
+  }
+  if (normalized.includes('ibuprofen') || normalized.includes('naproxen') || normalized.includes('aspirin')) {
+    keys.add('nsaid');
+  }
+  if (normalized.includes('sertraline') || normalized.includes('fluoxetine') || normalized.includes('escitalopram')) {
+    keys.add('ssri');
+  }
+  if (normalized.includes('omeprazole') || normalized.includes('pantoprazole') || normalized.includes('esomeprazole')) {
+    keys.add('ppi');
+  }
+  if (normalized.includes('atorvastatin') || normalized.includes('simvastatin') || normalized.includes('rosuvastatin')) {
+    keys.add('statins');
+  }
+  if (normalized.includes('coq10') || normalized.includes('coenzyme_q10')) {
+    keys.add('coq10');
+    keys.add('coenzyme_q10_ubiquinol');
+  }
+
+  return Array.from(keys);
+}
+
+// ─── Clash Rule Lookup ──────────────────────────────────────────────────────
+
 function lookupClash(
   itemA: string,
   itemB: string,
   clashRules: ClashRulesMap
 ): ClashRuleParsed | null {
-  // Check both directions: A→B and B→A
-  const forward = clashRules[itemA]?.[itemB];
-  if (forward) return forward;
-  const reverse = clashRules[itemB]?.[itemA];
-  if (reverse) return reverse;
-  return null;
+  const keysA = getItemKeys(itemA);
+  const keysB = getItemKeys(itemB);
+
+  let worstClash: ClashRuleParsed | null = null;
+
+  for (const kA of keysA) {
+    for (const kB of keysB) {
+      const forward = clashRules[kA]?.[kB];
+      if (forward) {
+        if (!worstClash || forward.severity > worstClash.severity) {
+          worstClash = forward;
+        }
+      }
+      const reverse = clashRules[kB]?.[kA];
+      if (reverse) {
+        if (!worstClash || reverse.severity > worstClash.severity) {
+          worstClash = reverse;
+        }
+      }
+    }
+  }
+
+  return worstClash;
 }
 
 function lookupBoost(
@@ -76,11 +212,29 @@ function lookupBoost(
   itemB: string,
   boostRules: BoostRulesMap
 ): BoostRuleParsed | null {
-  const forward = boostRules[itemA]?.[itemB];
-  if (forward) return forward;
-  const reverse = boostRules[itemB]?.[itemA];
-  if (reverse) return reverse;
-  return null;
+  const keysA = getItemKeys(itemA);
+  const keysB = getItemKeys(itemB);
+
+  let bestBoost: BoostRuleParsed | null = null;
+
+  for (const kA of keysA) {
+    for (const kB of keysB) {
+      const forward = boostRules[kA]?.[kB];
+      if (forward) {
+        if (!bestBoost || forward.score_bonus > bestBoost.score_bonus) {
+          bestBoost = forward;
+        }
+      }
+      const reverse = boostRules[kB]?.[kA];
+      if (reverse) {
+        if (!bestBoost || reverse.score_bonus > bestBoost.score_bonus) {
+          bestBoost = reverse;
+        }
+      }
+    }
+  }
+
+  return bestBoost;
 }
 
 // ─── Sliding Window Scan ─────────────────────────────────────────────────────
