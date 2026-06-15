@@ -1,0 +1,1900 @@
+{
+  "levothyroxine": {
+    "calcium_carbonate": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Calcium binds to levothyroxine in the GI tract, reducing absorption by up to 30%.",
+      "resolution": "Separate by at least 4 hours.",
+      "window_minutes": 240,
+      "penalty_abs": 30,
+      "penalty_crit": 5,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "iron_sulfate": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Iron forms insoluble complexes with levothyroxine, dramatically reducing bioavailability.",
+      "resolution": "Separate by at least 4 hours.",
+      "window_minutes": 240,
+      "penalty_abs": 30,
+      "penalty_crit": 5,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "aluminum_hydroxide": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 30,
+      "mechanism": "Antacids containing aluminum bind thyroid hormones in the gut.",
+      "resolution": "Take levothyroxine 4 hours before antacids.",
+      "window_minutes": 240,
+      "penalty_abs": 25,
+      "penalty_crit": 5,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "omeprazole": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "PPIs reduce gastric acidity needed for levothyroxine dissolution and absorption.",
+      "resolution": "Take levothyroxine 30-60 min before PPI.",
+      "window_minutes": 60,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "coffee": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Coffee reduces levothyroxine absorption by up to 36% when taken concurrently.",
+      "resolution": "Wait at least 60 minutes after taking levothyroxine before drinking coffee.",
+      "window_minutes": 60,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "soy": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Soy protein interferes with levothyroxine absorption in the intestine.",
+      "resolution": "Maintain consistent soy intake; take levothyroxine 4 hours apart.",
+      "window_minutes": 240,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "magnesium_oxide": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Magnesium forms insoluble chelate complexes with levothyroxine.",
+      "resolution": "Separate by at least 4 hours.",
+      "window_minutes": 240,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "soy_milk": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Soy protein can bind thyroid hormone in the gut, reducing absorption.",
+      "resolution": "Take levothyroxine at least 4 hours apart from soy containing foods.",
+      "window_minutes": 240,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 3
+    }
+  },
+  "warfarin": {
+    "aspirin": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "Combined anticoagulant and antiplatelet effects dramatically increase hemorrhage risk.",
+      "resolution": "Avoid concurrent use unless under strict medical supervision.",
+      "window_minutes": 360,
+      "penalty_abs": 5,
+      "penalty_crit": 40,
+      "penalty_gastric": 10,
+      "penalty_cum": 10
+    },
+    "ibuprofen": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "NSAIDs inhibit platelet function and may displace warfarin from protein binding sites.",
+      "resolution": "Avoid NSAIDs with warfarin; use acetaminophen for pain.",
+      "window_minutes": 360,
+      "penalty_abs": 5,
+      "penalty_crit": 35,
+      "penalty_gastric": 10,
+      "penalty_cum": 10
+    },
+    "vitamin_k": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 30,
+      "mechanism": "Vitamin K directly antagonizes warfarin's anticoagulant mechanism.",
+      "resolution": "Maintain consistent vitamin K intake; do not supplement without medical guidance.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 30,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "cranberry": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Cranberry juice may inhibit CYP2C9, increasing warfarin levels and bleeding risk.",
+      "resolution": "Limit cranberry intake; monitor INR closely.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "ginger": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Ginger has mild antiplatelet properties that may enhance warfarin's effect.",
+      "resolution": "Use ginger in moderation; monitor INR.",
+      "window_minutes": 120,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "grapefruit": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Grapefruit inhibits CYP3A4 and may alter warfarin metabolism.",
+      "resolution": "Avoid grapefruit or maintain very consistent intake.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "green_tea": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Green tea contains vitamin K which can reduce warfarin effectiveness.",
+      "resolution": "Limit green tea to consistent moderate amounts.",
+      "window_minutes": 240,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "ginkgo_biloba": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Ginkgolides have antiplatelet activity; combination with warfarin increases bleeding risk without altering INR.",
+      "resolution": "Avoid ginkgo supplements while on anticoagulants.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "st_johns_wort": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "St. John's Wort strongly induces CYP2C9 and CYP3A4, dramatically reducing warfarin levels and risking blood clots.",
+      "resolution": "Avoid St. John's Wort entirely. Monitor INR.",
+      "window_minutes": 720,
+      "penalty_abs": 35,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    },
+    "garlic_extract_allicin": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Garlic has mild antiplatelet effects and can increase bleeding risk when taken with warfarin.",
+      "resolution": "Monitor INR and bleeding symptoms.",
+      "window_minutes": 240,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "ginseng": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Ginseng may decrease warfarin effectiveness, lowering INR and increasing clotting risk.",
+      "resolution": "Avoid ginseng supplements; monitor INR.",
+      "window_minutes": 360,
+      "penalty_abs": 15,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "spinach": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Spinach is rich in Vitamin K, which directly counteracts warfarin's anticoagulant mechanism, lowering INR and increasing clot risk.",
+      "resolution": "Maintain a highly consistent daily intake of Vitamin K foods; do not make sudden dietary changes.",
+      "window_minutes": 360,
+      "penalty_abs": 25,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "coenzyme_q10_ubiquinol": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "CoQ10 is structurally similar to Vitamin K and may reduce the anticoagulant effect of warfarin.",
+      "resolution": "Avoid CoQ10 supplements or monitor INR closely.",
+      "window_minutes": 360,
+      "penalty_abs": 20,
+      "penalty_crit": 5,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "green_tea_extract_egcg": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Green tea contains Vitamin K which can antagonize warfarin's action.",
+      "resolution": "Avoid green tea extracts.",
+      "window_minutes": 360,
+      "penalty_abs": 15,
+      "penalty_crit": 5,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "metformin": {
+    "alcohol": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "Alcohol impairs hepatic gluconeogenesis; combined with metformin increases lactic acidosis risk.",
+      "resolution": "Limit alcohol significantly or avoid entirely while on metformin.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 10,
+      "penalty_cum": 10
+    },
+    "iodinated_contrast": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "Contrast media with metformin increases risk of contrast-induced nephropathy and lactic acidosis.",
+      "resolution": "Stop metformin 48 hours before and after contrast procedures.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 40,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    },
+    "beverage_alcoholic": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 85,
+      "mechanism": "Alcohol enhances the effect of metformin on lactate metabolism, dramatically increasing the risk of potentially fatal lactic acidosis.",
+      "resolution": "Avoid alcohol completely while taking metformin.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 80,
+      "penalty_gastric": 0,
+      "penalty_cum": 20
+    }
+  },
+  "ciprofloxacin": {
+    "calcium_carbonate": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Divalent cations chelate fluoroquinolones, reducing antibiotic absorption by up to 90%.",
+      "resolution": "Take ciprofloxacin 2 hours before or 6 hours after calcium.",
+      "window_minutes": 120,
+      "penalty_abs": 35,
+      "penalty_crit": 5,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "iron_sulfate": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Iron chelates fluoroquinolones, rendering the antibiotic ineffective.",
+      "resolution": "Separate by 2 hours before or 6 hours after.",
+      "window_minutes": 120,
+      "penalty_abs": 35,
+      "penalty_crit": 5,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "magnesium_oxide": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 30,
+      "mechanism": "Magnesium chelates ciprofloxacin, significantly reducing absorption.",
+      "resolution": "Separate by at least 2 hours.",
+      "window_minutes": 120,
+      "penalty_abs": 30,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "dairy": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Dairy calcium chelates fluoroquinolones, reducing absorption.",
+      "resolution": "Avoid dairy 2 hours before/after ciprofloxacin.",
+      "window_minutes": 120,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "caffeine": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Ciprofloxacin inhibits CYP1A2, increasing caffeine levels and causing jitteriness.",
+      "resolution": "Reduce caffeine intake while on ciprofloxacin.",
+      "window_minutes": 120,
+      "penalty_abs": 0,
+      "penalty_crit": 0,
+      "penalty_gastric": 5,
+      "penalty_cum": 10
+    }
+  },
+  "tetracycline": {
+    "calcium_carbonate": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Calcium chelates tetracycline, forming insoluble complexes.",
+      "resolution": "Take 2 hours apart.",
+      "window_minutes": 120,
+      "penalty_abs": 35,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "iron_sulfate": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Iron chelates tetracyclines.",
+      "resolution": "Separate by 2 hours.",
+      "window_minutes": 120,
+      "penalty_abs": 35,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "dairy": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 30,
+      "mechanism": "Dairy calcium forms insoluble chelates with tetracycline.",
+      "resolution": "Avoid dairy 2 hours before/after.",
+      "window_minutes": 120,
+      "penalty_abs": 30,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "antacids": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 30,
+      "mechanism": "Antacid metals (Al, Mg, Ca) all chelate tetracyclines.",
+      "resolution": "Separate by 2-3 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 30,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    }
+  },
+  "amlodipine": {
+    "grapefruit": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Grapefruit inhibits CYP3A4, increasing amlodipine plasma levels and risk of hypotension.",
+      "resolution": "Avoid grapefruit and grapefruit juice.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "simvastatin": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Amlodipine inhibits CYP3A4, increasing simvastatin levels and myopathy risk.",
+      "resolution": "Limit simvastatin to 20mg/day when combined with amlodipine.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "atorvastatin": {
+    "grapefruit": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Grapefruit inhibits CYP3A4, significantly increasing statin blood levels and rhabdomyolysis risk.",
+      "resolution": "Avoid grapefruit entirely while on atorvastatin.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "erythromycin": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Erythromycin strongly inhibits CYP3A4, dramatically increasing statin toxicity risk.",
+      "resolution": "Use alternative antibiotic or temporarily hold statin.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 30,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "gemfibrozil": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "Gemfibrozil inhibits statin glucuronidation and OATP1B1 transport, causing severe myopathy.",
+      "resolution": "Avoid combination; use fenofibrate instead if fibrate needed.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "omeprazole": {
+    "clopidogrel": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Omeprazole inhibits CYP2C19, preventing conversion of clopidogrel to its active metabolite.",
+      "resolution": "Use pantoprazole instead, which has less CYP2C19 inhibition.",
+      "window_minutes": 120,
+      "penalty_abs": 25,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "iron_sulfate": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "PPIs reduce gastric acid needed for iron salt dissolution and absorption.",
+      "resolution": "Use iron bisglycinate form or take iron during PPI 'off' periods.",
+      "window_minutes": 120,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "calcium_carbonate": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Reduced stomach acid impairs calcium carbonate dissolution.",
+      "resolution": "Use calcium citrate instead, which doesn't require acid for absorption.",
+      "window_minutes": 120,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "vitamin_b12": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Long-term PPI use reduces B12 absorption by decreasing intrinsic factor release.",
+      "resolution": "Monitor B12 levels; consider supplementation.",
+      "window_minutes": 120,
+      "penalty_abs": 10,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "magnesium_oxide": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "PPIs reduce magnesium absorption with chronic use.",
+      "resolution": "Monitor magnesium levels; use magnesium glycinate.",
+      "window_minutes": 120,
+      "penalty_abs": 10,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "lisinopril": {
+    "potassium_chloride": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "ACE inhibitors reduce aldosterone secretion, causing potassium retention; supplements compound this.",
+      "resolution": "Avoid potassium supplements.",
+      "window_minutes": 240,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "spironolactone": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "Both drugs increase potassium; combination greatly increases hyperkalemia risk.",
+      "resolution": "If combined, monitor potassium levels very closely.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "ibuprofen": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "NSAIDs reduce ACE inhibitor effectiveness and increase renal impairment risk.",
+      "resolution": "Use acetaminophen for pain; avoid chronic NSAID use.",
+      "window_minutes": 120,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 5,
+      "penalty_cum": 10
+    }
+  },
+  "methotrexate": {
+    "ibuprofen": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "NSAIDs inhibit renal clearance of methotrexate, leading to severe bone marrow suppression and GI toxicity.",
+      "resolution": "Avoid NSAIDs; use acetaminophen for pain relief.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 40,
+      "penalty_gastric": 15,
+      "penalty_cum": 15
+    },
+    "aspirin": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "Aspirin displaces methotrexate from protein binding and reduces renal clearance.",
+      "resolution": "Avoid aspirin while on methotrexate.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 40,
+      "penalty_gastric": 5,
+      "penalty_cum": 10
+    },
+    "folic_acid": {
+      "type": "MILD",
+      "severity": 5,
+      "mechanism": "Folic acid may slightly reduce methotrexate efficacy but protects against toxicity.",
+      "resolution": "Take folic acid as prescribed to reduce side effects.",
+      "window_minutes": 60,
+      "penalty_abs": 5,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "alcohol": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "Both are hepatotoxic; combination dramatically increases liver damage risk.",
+      "resolution": "Avoid alcohol completely while on methotrexate.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 5,
+      "penalty_cum": 15
+    },
+    "naproxen": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "NSAIDs reduce methotrexate excretion, risking life-threatening toxicity.",
+      "resolution": "Avoid NSAIDs.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 40,
+      "penalty_gastric": 15,
+      "penalty_cum": 15
+    },
+    "omeprazole": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "Omeprazole inhibits renal H+/K+-ATPase and organic anion transporters, reducing methotrexate elimination and risking toxicity.",
+      "resolution": "Avoid PPIs during high-dose methotrexate therapy.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 5,
+      "penalty_cum": 10
+    },
+    "omeprazole_20mg": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "PPIs reduce methotrexate renal clearance.",
+      "resolution": "Monitor levels or use H2 blocker instead.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 5,
+      "penalty_cum": 10
+    },
+    "omeprazole_40mg": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "High-dose PPI reduces methotrexate excretion, raising toxicity risk.",
+      "resolution": "Avoid combination.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 30,
+      "penalty_gastric": 5,
+      "penalty_cum": 10
+    }
+  },
+  "ibuprofen": {
+    "aspirin": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "Ibuprofen blocks aspirin's antiplatelet binding site, reducing cardioprotection.",
+      "resolution": "Take aspirin 30 min before ibuprofen, or use alternative analgesic.",
+      "window_minutes": 60,
+      "penalty_abs": 10,
+      "penalty_crit": 15,
+      "penalty_gastric": 15,
+      "penalty_cum": 5
+    },
+    "alcohol": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "NSAIDs + alcohol synergistically damage gastric mucosa and increase GI bleeding risk.",
+      "resolution": "Avoid alcohol when taking ibuprofen.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 30,
+      "penalty_cum": 10
+    },
+    "prednisone": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Corticosteroids + NSAIDs greatly increase GI ulcer and perforation risk.",
+      "resolution": "Use gastroprotective agent (PPI) if combination is unavoidable.",
+      "window_minutes": 240,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 30,
+      "penalty_cum": 10
+    },
+    "lithium": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "NSAIDs reduce renal lithium clearance, causing toxic lithium levels.",
+      "resolution": "Avoid NSAIDs; monitor lithium levels if unavoidable.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "iron_sulfate": {
+    "calcium_carbonate": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Calcium inhibits non-heme iron absorption by up to 60%.",
+      "resolution": "Separate iron and calcium by at least 2 hours.",
+      "window_minutes": 120,
+      "penalty_abs": 25,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "coffee": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Coffee polyphenols chelate iron, reducing absorption by up to 39%.",
+      "resolution": "Avoid coffee 1 hour before and after iron.",
+      "window_minutes": 60,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "tea": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Tea tannins bind iron, reducing absorption by up to 64%.",
+      "resolution": "Avoid tea 1 hour before and after iron supplements.",
+      "window_minutes": 60,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "vitamin_c": {
+      "type": "MILD",
+      "severity": 0,
+      "mechanism": "Vitamin C enhances non-heme iron absorption (this is beneficial).",
+      "resolution": "Take vitamin C with iron for better absorption.",
+      "window_minutes": 30,
+      "penalty_abs": 0,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "zinc": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Zinc and iron compete for the same absorption transporter (DMT1).",
+      "resolution": "Separate zinc and iron supplements by 2 hours.",
+      "window_minutes": 120,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "zinc_picolinate": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "High concentrations of iron can inhibit zinc absorption.",
+      "resolution": "Separate administration by 2 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 3
+    }
+  },
+  "calcium_carbonate": {
+    "zinc": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "High-dose calcium inhibits zinc absorption.",
+      "resolution": "Take zinc and calcium at different times of day.",
+      "window_minutes": 120,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "zinc_picolinate": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "High doses of calcium can compete with zinc for absorption in the small intestine.",
+      "resolution": "Separate doses by 2 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 3
+    }
+  },
+  "doxycycline": {
+    "calcium_carbonate": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 30,
+      "mechanism": "Calcium chelates doxycycline, reducing antibiotic efficacy significantly.",
+      "resolution": "Separate by at least 2-3 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 30,
+      "penalty_crit": 5,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "dairy": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Dairy calcium chelates doxycycline.",
+      "resolution": "Avoid dairy 2 hours before/after doxycycline.",
+      "window_minutes": 120,
+      "penalty_abs": 25,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "iron_sulfate": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 30,
+      "mechanism": "Iron chelates doxycycline, forming insoluble complexes.",
+      "resolution": "Separate by 2-3 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 30,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "antacids": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 30,
+      "mechanism": "Antacid cations chelate doxycycline.",
+      "resolution": "Take doxycycline 2 hours before antacids.",
+      "window_minutes": 120,
+      "penalty_abs": 30,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    }
+  },
+  "ssri": {
+    "st_johns_wort": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "St. John's Wort increases serotonin; combination risks serotonin syndrome.",
+      "resolution": "Do NOT combine with any SSRI/SNRI antidepressant.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 40,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "tramadol": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Tramadol has serotonergic activity; combined with SSRIs increases serotonin syndrome risk.",
+      "resolution": "Use alternative analgesic or monitor closely.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 30,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "tryptophan": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Tryptophan is a serotonin precursor; supplementation with SSRIs may cause serotonin excess.",
+      "resolution": "Avoid tryptophan supplements while on SSRIs.",
+      "window_minutes": 240,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "alendronate": {
+    "calcium_carbonate": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Divalent calcium ions chelate alendronate, reducing its bone absorption by over 60%.",
+      "resolution": "Take alendronate 30 minutes before calcium or food in the morning.",
+      "window_minutes": 120,
+      "penalty_abs": 25,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "coffee": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Coffee reduces bisphosphonate absorption.",
+      "resolution": "Take alendronate with plain water only; wait 30 min before coffee.",
+      "window_minutes": 30,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "iron_sulfate": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Iron interferes with bisphosphonate absorption.",
+      "resolution": "Separate by at least 2 hours.",
+      "window_minutes": 120,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "coffee_black": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "Coffee reduces the absorption of alendronate by up to 60%.",
+      "resolution": "Take alendronate with plain water only, 30 minutes before coffee or food.",
+      "window_minutes": 120,
+      "penalty_abs": 30,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "digoxin": {
+    "amiodarone": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "Amiodarone increases digoxin levels by 70-100%, risking toxicity.",
+      "resolution": "Reduce digoxin dose by 50% when starting amiodarone.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "st_johns_wort": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "St. John's Wort induces P-glycoprotein, reducing digoxin levels by 25%.",
+      "resolution": "Avoid St. John's Wort; monitor digoxin levels.",
+      "window_minutes": 360,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "fiber": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "High fiber intake can reduce digoxin absorption.",
+      "resolution": "Take digoxin separately from high-fiber meals.",
+      "window_minutes": 120,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 0
+    },
+    "calcium_carbonate": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "Hypercalcemia increases the cardiotoxicity of digoxin, potentially causing cardiac arrhythmias.",
+      "resolution": "Avoid concurrent calcium supplements or monitor levels closely.",
+      "window_minutes": 240,
+      "penalty_abs": 5,
+      "penalty_crit": 25,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "licorice_root": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Licorice causes potassium depletion (hypokalemia), which severely sensitizes the heart to digoxin toxicity.",
+      "resolution": "Avoid licorice-containing foods/teas while taking digoxin.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 30,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "fiber_psyllium": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Soluble fibers can bind digoxin in the GI tract, reducing its absorption.",
+      "resolution": "Separate by 2 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "mao_inhibitor": {
+    "tyramine": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 50,
+      "mechanism": "MAOIs prevent tyramine metabolism; accumulated tyramine causes hypertensive crisis.",
+      "resolution": "Strictly avoid aged cheeses, cured meats, fermented foods, red wine.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 45,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "sildenafil": {
+    "nitroglycerin": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 95,
+      "mechanism": "Nitrates combined with PDE5 inhibitors cause synergistic vasodilation leading to severe, potentially fatal hypotension.",
+      "resolution": "Do NOT combine. Separate by at least 24-48 hours.",
+      "window_minutes": 2880,
+      "penalty_abs": 0,
+      "penalty_crit": 95,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    }
+  },
+  "tadalafil": {
+    "nitroglycerin": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 95,
+      "mechanism": "Tadalafil has a long half-life; combination with nitrates causes life-threatening blood pressure drops.",
+      "resolution": "Do NOT combine. Separate by at least 48 hours.",
+      "window_minutes": 2880,
+      "penalty_abs": 0,
+      "penalty_crit": 95,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    }
+  },
+  "spironolactone": {
+    "potassium_chloride": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Spironolactone is a potassium-sparing diuretic; concurrent potassium supplements can cause severe hyperkalemia.",
+      "resolution": "Avoid potassium supplements. Monitor serum potassium.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "enalapril": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Concurrent potassium-sparing diuretic and ACE inhibitor therapy increases risk of hyperkalemia.",
+      "resolution": "Monitor potassium levels.",
+      "window_minutes": 240,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "lisinopril": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Combined therapy can cause hyperkalemia.",
+      "resolution": "Monitor potassium levels.",
+      "window_minutes": 240,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "metoprolol": {
+    "fluoxetine": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Fluoxetine is a strong CYP2D6 inhibitor, blocking metoprolol metabolism and increasing cardiorespiratory side effects.",
+      "resolution": "Monitor heart rate and blood pressure; consider lower metoprolol dose.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "carvedilol": {
+    "fluoxetine": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "CYP2D6 inhibition by fluoxetine increases carvedilol levels, worsening bradycardia.",
+      "resolution": "Monitor heart rate closely.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "cyclosporine": {
+    "grapefruit": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 50,
+      "mechanism": "Grapefruit inhibits CYP3A4, increasing cyclosporine blood levels by up to 300%, leading to nephrotoxicity.",
+      "resolution": "Avoid grapefruit and grapefruit juice entirely.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 50,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "st_johns_wort": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 50,
+      "mechanism": "St. John's Wort induces CYP3A4, dropping cyclosporine levels and causing organ transplant rejection.",
+      "resolution": "Avoid St. John's Wort entirely.",
+      "window_minutes": 720,
+      "penalty_abs": 45,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    }
+  },
+  "sertraline": {
+    "tramadol": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Both drugs increase synaptic serotonin levels; combination raises the risk of Serotonin Syndrome.",
+      "resolution": "Avoid combination or monitor closely for tremors, rigidity, and hyperthermia.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 30,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    },
+    "st_johns_wort": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "Combined SSRI and St. John's Wort causes additive serotonergic toxicity.",
+      "resolution": "Do not supplement St. John's Wort while on antidepressants.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "ibuprofen": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "SSRIs inhibit platelet serotonin uptake; combined with NSAIDs greatly increases upper GI bleeding risk.",
+      "resolution": "Monitor for dark stools; use gastroprotection.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 10,
+      "penalty_cum": 5
+    }
+  },
+  "escitalopram": {
+    "tramadol": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Additive serotonergic pathways increase risk of Serotonin Syndrome and seizures.",
+      "resolution": "Avoid concurrent use.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 30,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    },
+    "st_johns_wort": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "SSRI + St. John's Wort triggers serotonin syndrome.",
+      "resolution": "Avoid combination.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "ibuprofen": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "SSRI + NSAID additive antiplatelet effects raise bleed risk.",
+      "resolution": "Avoid combination or use with care.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 10,
+      "penalty_cum": 5
+    }
+  },
+  "phenelzine": {
+    "sertraline": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 55,
+      "mechanism": "MAO inhibitors combined with SSRIs block serotonin degradation, causing fatal serotonin syndrome.",
+      "resolution": "Requires at least 14 days washout period between these medications.",
+      "window_minutes": 10080,
+      "penalty_abs": 0,
+      "penalty_crit": 55,
+      "penalty_gastric": 0,
+      "penalty_cum": 20
+    }
+  },
+  "levodopa": {
+    "iron_sulfate": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Iron chelates levodopa in the GI tract, reducing its absorption and therapeutic effect in Parkinson's.",
+      "resolution": "Separate doses by at least 2 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 25,
+      "penalty_crit": 0,
+      "penalty_gastric": 5,
+      "penalty_cum": 5
+    },
+    "vitamin_b6_pyridoxine_hcl": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Pyridoxine accelerates peripheral decarboxylation of levodopa, reducing the amount reaching the brain.",
+      "resolution": "Avoid B6 doses > 5mg/day unless taking carbidopa.",
+      "window_minutes": 240,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "beef_steak": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Dietary amino acids compete with levodopa for transport across the intestinal wall and blood-brain barrier.",
+      "resolution": "Take levodopa 30-60 minutes before protein-rich meals.",
+      "window_minutes": 120,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "lithium_orotate": {
+    "ibuprofen": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "NSAIDs decrease renal lithium clearance, raising serum lithium levels and risking toxicity.",
+      "resolution": "Monitor lithium levels; avoid NSAIDs if possible.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "naproxen": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "NSAID-induced prostaglandin inhibition reduces renal blood flow, increasing lithium levels.",
+      "resolution": "Avoid NSAIDs with lithium.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "coffee_black": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Caffeine increases renal lithium excretion; sudden caffeine withdrawal can spike lithium levels.",
+      "resolution": "Maintain consistent caffeine intake.",
+      "window_minutes": 240,
+      "penalty_abs": 10,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "phenytoin": {
+    "calcium_carbonate": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Calcium reduces phenytoin absorption and blood levels, risking seizures.",
+      "resolution": "Separate dose by at least 2 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "vitamin_b9_folic_acid": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Folic acid acts as a cofactor in phenytoin metabolism, increasing its clearance and lowering blood levels, potentially triggering seizures.",
+      "resolution": "Monitor phenytoin levels if supplementing folic acid.",
+      "window_minutes": 240,
+      "penalty_abs": 20,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "carbamazepine": {
+    "grapefruit": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "Grapefruit inhibits CYP3A4, increasing carbamazepine levels and causing ataxia, nystagmus, and dizziness.",
+      "resolution": "Avoid grapefruit entirely.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 30,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "st_johns_wort": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 35,
+      "mechanism": "St. John's Wort induces CYP3A4, increasing carbamazepine metabolism and decreasing blood levels, risking seizures.",
+      "resolution": "Avoid St. John's Wort.",
+      "window_minutes": 720,
+      "penalty_abs": 30,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "oral_contraceptives": {
+    "st_johns_wort": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "St. John's Wort induces CYP3A4, accelerating contraceptive estrogen metabolism and risking breakthrough bleeding and pregnancy.",
+      "resolution": "Use barrier contraception; avoid St. John's Wort.",
+      "window_minutes": 720,
+      "penalty_abs": 35,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "tacrolimus": {
+    "grapefruit": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 50,
+      "mechanism": "Grapefruit increases tacrolimus levels via CYP3A4 inhibition, causing severe nephrotoxicity.",
+      "resolution": "Avoid grapefruit entirely.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 50,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "verapamil": {
+    "grapefruit": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Grapefruit increases verapamil exposure, increasing risk of bradycardia and hypotension.",
+      "resolution": "Avoid grapefruit juice.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "buspirone": {
+    "grapefruit": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Grapefruit increases buspirone levels, causing dizziness and drowsiness.",
+      "resolution": "Avoid grapefruit.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "quetiapine": {
+    "grapefruit": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Grapefruit CYP3A4 inhibition increases quetiapine exposure and somnolence.",
+      "resolution": "Avoid grapefruit.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "lurasidone": {
+    "grapefruit": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "CYP3A4 inhibition by grapefruit significantly increases antipsychotic levels and side effects.",
+      "resolution": "Avoid grapefruit.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "metformin_1000mg": {
+    "beverage_alcoholic": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 85,
+      "mechanism": "Alcohol combined with high dose metformin increases risk of lactic acidosis.",
+      "resolution": "Do not consume alcohol.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 80,
+      "penalty_gastric": 0,
+      "penalty_cum": 20
+    }
+  },
+  "atorvastatin_40mg": {
+    "grapefruit": {
+      "type": "WARNING",
+      "severity": 40,
+      "mechanism": "CYP3A4 inhibition by grapefruit increases concentration of high-dose atorvastatin, raising risk of muscle breakdown.",
+      "resolution": "Avoid grapefruit juice.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 30,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "amlodipine_10mg": {
+    "grapefruit": {
+      "type": "WARNING",
+      "severity": 28,
+      "mechanism": "Grapefruit increases amlodipine concentration, boosting risk of ankle swelling and low blood pressure.",
+      "resolution": "Avoid grapefruit juice.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 18,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "simvastatin": {
+    "amiodarone": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "Amiodarone inhibits CYP3A4 metabolism of simvastatin. Concomitant use increases risk of rhabdomyolysis (simvastatin dose should not exceed 20mg/day).",
+      "resolution": "Avoid combination or limit simvastatin dose to 20mg/day maximum.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    },
+    "amiodarone_200mg": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "CYP3A4 inhibition increases simvastatin levels, causing muscle toxicity.",
+      "resolution": "Avoid concurrent use.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 35,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    }
+  },
+  "warfarin_2mg": {
+    "spinach": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Vitamin K in spinach opposes warfarin action.",
+      "resolution": "Keep spinach intake consistent.",
+      "window_minutes": 360,
+      "penalty_abs": 25,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "warfarin_5mg": {
+    "spinach": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "High Vitamin K foods antagonize anticoagulation.",
+      "resolution": "Keep intake highly consistent.",
+      "window_minutes": 360,
+      "penalty_abs": 25,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "acetaminophen": {
+    "beverage_alcoholic": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Chronic alcohol consumption induces CYP2E1, forming a hepatotoxic metabolite (NAPQI) from acetaminophen, increasing liver failure risk.",
+      "resolution": "Avoid combining alcohol and acetaminophen. Limit acetaminophen to 2000mg/day if drinking.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 10,
+      "penalty_cum": 10
+    }
+  },
+  "acetaminophen_500mg": {
+    "beverage_alcoholic": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Alcohol increases acetaminophen liver toxicity via glutathione depletion.",
+      "resolution": "Avoid alcohol.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 10,
+      "penalty_cum": 10
+    }
+  },
+  "ciprofloxacin_500mg": {
+    "calcium_carbonate": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Calcium chelates fluoroquinolone antibiotics in the stomach.",
+      "resolution": "Separate by 2 hours before or 6 hours after.",
+      "window_minutes": 240,
+      "penalty_abs": 35,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "calcium_citrate": {
+      "type": "WARNING",
+      "severity": 35,
+      "mechanism": "Calcium chelates ciprofloxacin, reducing antibiotic efficacy.",
+      "resolution": "Separate doses.",
+      "window_minutes": 240,
+      "penalty_abs": 35,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "doxycycline_100mg": {
+    "iron_sulfate": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "Iron chelates tetracycline antibiotics.",
+      "resolution": "Separate by at least 2 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 30,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "iron_bisglycinate": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "Iron chelates doxycycline.",
+      "resolution": "Separate by 2 hours.",
+      "window_minutes": 180,
+      "penalty_abs": 30,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "fluoxetine": {
+    "tamoxifen": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 50,
+      "mechanism": "Fluoxetine is a potent CYP2D6 inhibitor, preventing conversion of tamoxifen to its active metabolite endoxifen, reducing cancer therapy efficacy.",
+      "resolution": "Avoid fluoxetine; use an alternative antidepressant like escitalopram.",
+      "window_minutes": 1440,
+      "penalty_abs": 0,
+      "penalty_crit": 45,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    }
+  },
+  "fluoxetine_40mg": {
+    "tamoxifen": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 50,
+      "mechanism": "CYP2D6 inhibition blocks activation of tamoxifen.",
+      "resolution": "Do not combine.",
+      "window_minutes": 1440,
+      "penalty_abs": 0,
+      "penalty_crit": 45,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    }
+  },
+  "gabapentin": {
+    "magnesium_oxide": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Magnesium antacids reduce the absorption of gabapentin by approximately 20%.",
+      "resolution": "Take gabapentin at least 2 hours after magnesium supplements.",
+      "window_minutes": 120,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "gabapentin_600mg": {
+    "magnesium_oxide": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Magnesium oxide reduces gabapentin bioavailability.",
+      "resolution": "Separate by 2 hours.",
+      "window_minutes": 120,
+      "penalty_abs": 20,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    },
+    "magnesium_glycinate": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Magnesium glycinate may slightly reduce gabapentin absorption.",
+      "resolution": "Separate by 2 hours.",
+      "window_minutes": 120,
+      "penalty_abs": 15,
+      "penalty_crit": 0,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "lisinopril_10mg": {
+    "spironolactone_25mg": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Potential hyperkalemia risk.",
+      "resolution": "Monitor serum potassium.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "lisinopril_20mg": {
+    "spironolactone_50mg": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Significant risk of hyperkalemia.",
+      "resolution": "Avoid potassium-sparing combinations or monitor closely.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "clopidogrel_75mg": {
+    "omeprazole_20mg": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 40,
+      "mechanism": "Omeprazole inhibits clopidogrel activation.",
+      "resolution": "Do not take omeprazole with clopidogrel.",
+      "window_minutes": 720,
+      "penalty_abs": 35,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "omeprazole_40mg": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "Stronger inhibition of clopidogrel activation.",
+      "resolution": "Avoid omeprazole completely.",
+      "window_minutes": 720,
+      "penalty_abs": 40,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "linezolid": {
+    "sertraline": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 60,
+      "mechanism": "Linezolid is a weak, reversible MAOI. Combined with SSRIs, it can cause severe, potentially fatal Serotonin Syndrome.",
+      "resolution": "Do NOT combine. Stop sertraline at least 14 days before starting linezolid.",
+      "window_minutes": 10080,
+      "penalty_abs": 0,
+      "penalty_crit": 60,
+      "penalty_gastric": 0,
+      "penalty_cum": 20
+    },
+    "escitalopram": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 60,
+      "mechanism": "MAOI antibiotic combined with SSRI risks serotonin syndrome.",
+      "resolution": "Avoid concurrent use.",
+      "window_minutes": 10080,
+      "penalty_abs": 0,
+      "penalty_crit": 60,
+      "penalty_gastric": 0,
+      "penalty_cum": 20
+    },
+    "dextromethorphan": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 55,
+      "mechanism": "Combining MAOI antibiotic with serotonergic cough suppressant can trigger Serotonin Syndrome.",
+      "resolution": "Avoid combining linezolid and dextromethorphan.",
+      "window_minutes": 1440,
+      "penalty_abs": 0,
+      "penalty_crit": 50,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    }
+  },
+  "dextromethorphan": {
+    "sertraline": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "Dextromethorphan has mild serotonergic properties; combining with high SSRI doses risks Serotonin Syndrome.",
+      "resolution": "Use caution; avoid high doses of cough medicine.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "pseudoephedrine": {
+    "coffee_black": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Combined CNS stimulants can cause additive heart rate elevation, palpitations, jitteriness, and insomnia.",
+      "resolution": "Avoid caffeine and high coffee intake while on decongestants.",
+      "window_minutes": 240,
+      "penalty_abs": 0,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "green_tea_extract_egcg": {
+      "type": "WARNING",
+      "severity": 15,
+      "mechanism": "Additive stimulant effects may cause tachycardia.",
+      "resolution": "Separate or avoid.",
+      "window_minutes": 240,
+      "penalty_abs": 0,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "propranolol": {
+    "beverage_alcoholic": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Alcohol can increase propranolol absorption and plasma levels while adding to CNS depressant effects.",
+      "resolution": "Avoid alcohol consumption.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 5,
+      "penalty_cum": 10
+    }
+  },
+  "propranolol_40mg": {
+    "beverage_alcoholic": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Alcohol increases propranolol levels and lowers blood pressure.",
+      "resolution": "Do not drink alcohol.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 5,
+      "penalty_cum": 10
+    }
+  },
+  "melatonin_fast_release": {
+    "coffee_black": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Caffeine inhibits CYP1A2, which metabolizes melatonin, and acts as a central stimulant, blocking melatonin's sleep onset benefits.",
+      "resolution": "Do not consume caffeine near bedtime.",
+      "window_minutes": 240,
+      "penalty_abs": 10,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "kava_kava": {
+    "alprazolam": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "Kava kava has sedative properties and can act synergistically with benzodiazepines, risking severe somnolence, motor impairment, and lethargy.",
+      "resolution": "Avoid combination.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 40,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    },
+    "diazepam": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 45,
+      "mechanism": "Additive CNS depressant effects.",
+      "resolution": "Avoid kava with benzos.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 40,
+      "penalty_gastric": 0,
+      "penalty_cum": 15
+    }
+  },
+  "valerian_root": {
+    "beverage_alcoholic": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Valerian increases GABA activity; combining with alcohol causes additive sedation and psychomotor impairment.",
+      "resolution": "Avoid alcohol when taking valerian root.",
+      "window_minutes": 480,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "ginkgo_biloba": {
+    "ibuprofen": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Ginkgo inhibits platelet aggregation; combined with NSAIDs like ibuprofen, the risk of GI bleeding is elevated.",
+      "resolution": "Avoid NSAIDs with ginkgo; use acetaminophen.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 20,
+      "penalty_gastric": 10,
+      "penalty_cum": 5
+    },
+    "aspirin": {
+      "type": "WARNING",
+      "severity": 28,
+      "mechanism": "Additive antiplatelet effects increase microbleeding and bruising risk.",
+      "resolution": "Avoid combination.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 5,
+      "penalty_cum": 5
+    }
+  },
+  "echinacea_purpurea": {
+    "cyclosporine": {
+      "type": "WARNING",
+      "severity": 25,
+      "mechanism": "Echinacea stimulates immune function and can counteract the action of immunosuppressant drugs.",
+      "resolution": "Avoid echinacea supplements.",
+      "window_minutes": 360,
+      "penalty_abs": 20,
+      "penalty_crit": 10,
+      "penalty_gastric": 0,
+      "penalty_cum": 5
+    }
+  },
+  "red_yeast_rice": {
+    "atorvastatin": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "Red yeast rice naturally contains monacolin K (lovastatin); combining with prescription statins increases risk of muscle toxicity.",
+      "resolution": "Do not combine red yeast rice with prescription statins.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    },
+    "simvastatin": {
+      "type": "WARNING",
+      "severity": 30,
+      "mechanism": "Additive statin exposure increases risk of myopathy.",
+      "resolution": "Avoid combination.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 25,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "colchicine": {
+    "clarithromycin": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 85,
+      "mechanism": "Clarithromycin is a strong CYP3A4 and P-glycoprotein inhibitor, significantly raising colchicine exposure and risking fatal toxicity.",
+      "resolution": "Avoid concurrent use.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 80,
+      "penalty_gastric": 0,
+      "penalty_cum": 20
+    }
+  },
+  "colchicine_0_6mg": {
+    "clarithromycin_macrolide": {
+      "type": "CRITICAL_BLOCK",
+      "severity": 85,
+      "mechanism": "Concomitant use risks colchicine toxicity.",
+      "resolution": "Do not combine.",
+      "window_minutes": 720,
+      "penalty_abs": 0,
+      "penalty_crit": 80,
+      "penalty_gastric": 0,
+      "penalty_cum": 20
+    }
+  },
+  "allopurinol": {
+    "amoxicillin": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Concurrent use increases the incidence of drug-induced skin rash.",
+      "resolution": "Monitor for skin rashes; report changes immediately.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  },
+  "allopurinol_300mg": {
+    "amoxicillin_500mg": {
+      "type": "WARNING",
+      "severity": 20,
+      "mechanism": "Higher risk of drug rash.",
+      "resolution": "Monitor skin.",
+      "window_minutes": 360,
+      "penalty_abs": 0,
+      "penalty_crit": 15,
+      "penalty_gastric": 0,
+      "penalty_cum": 10
+    }
+  }
+}

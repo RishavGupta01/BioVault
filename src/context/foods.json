@@ -1,0 +1,5349 @@
+[
+  {
+    "generic_name": "grapefruit",
+    "category": "food",
+    "food_group": "citrus_fruit",
+    "common_aliases": [
+      "grapefruit juice",
+      "ruby red grapefruit"
+    ],
+    "interaction_profile": "CYP3A4_inhibitor",
+    "gastric_impact": "acidic",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "Inhibits intestinal CYP3A4 enzyme, increasing drug bioavailability and risk of toxicity for calcium channel blockers, statins, and others."
+  },
+  {
+    "generic_name": "orange_navel",
+    "category": "food",
+    "food_group": "citrus_fruit",
+    "common_aliases": [
+      "orange juice",
+      "navel orange"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Sweet orange variety; rich in vitamin C. Citric acid can cause mild stomach acidity."
+  },
+  {
+    "generic_name": "orange_seville",
+    "category": "food",
+    "food_group": "citrus_fruit",
+    "common_aliases": [
+      "seville orange",
+      "sour orange marmalade"
+    ],
+    "interaction_profile": "CYP3A4_inhibitor",
+    "gastric_impact": "acidic",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "Seville (sour) oranges contain furanocoumarins that inhibit CYP3A4, similar to grapefruit."
+  },
+  {
+    "generic_name": "lemon",
+    "category": "food",
+    "food_group": "citrus_fruit",
+    "common_aliases": [
+      "lemon juice",
+      "lemon water"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Highly acidic; contains citric acid which can irritate gastric lining but alkalizes urine."
+  },
+  {
+    "generic_name": "lime",
+    "category": "food",
+    "food_group": "citrus_fruit",
+    "common_aliases": [
+      "lime juice",
+      "key lime"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Acidic citrus fruit; can cause mild gastric irritation in sensitive stomachs."
+  },
+  {
+    "generic_name": "tangerine",
+    "category": "food",
+    "food_group": "citrus_fruit",
+    "common_aliases": [
+      "mandarin orange",
+      "tangerine juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Sweet citrus fruit; high in vitamin C and mild citric acid."
+  },
+  {
+    "generic_name": "clementine",
+    "category": "food",
+    "food_group": "citrus_fruit",
+    "common_aliases": [
+      "clementine orange",
+      "cuties"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Small, sweet, seedless citrus; high vitamin C content."
+  },
+  {
+    "generic_name": "kumquat",
+    "category": "food",
+    "food_group": "citrus_fruit",
+    "common_aliases": [
+      "kumquats"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Small citrus eaten with peel; rich in fiber and vitamin C."
+  },
+  {
+    "generic_name": "pomelo",
+    "category": "food",
+    "food_group": "citrus_fruit",
+    "common_aliases": [
+      "pummelo",
+      "shaddock"
+    ],
+    "interaction_profile": "CYP3A4_inhibitor",
+    "gastric_impact": "acidic",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "Pomelo contains furanocoumarins and can inhibit CYP3A4 similar to grapefruit."
+  },
+  {
+    "generic_name": "banana",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "bananas",
+      "ripe banana"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains pectin and mucilage; coats the stomach lining and is very easy to digest."
+  },
+  {
+    "generic_name": "banana_unripe",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "green banana"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High in resistant starch; prebiotic fuel for gut bacteria but can cause gas."
+  },
+  {
+    "generic_name": "mango",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "mango slices",
+      "mango juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Tropical fruit rich in vitamin A, C, and polyphenols."
+  },
+  {
+    "generic_name": "pineapple",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "pineapple juice",
+      "bromelain source"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Contains bromelain, a proteolytic enzyme that can assist digestion and enhance absorption of certain compounds."
+  },
+  {
+    "generic_name": "papaya",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "papayas",
+      "papaya juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Contains papain enzyme, which assists in protein digestion; soothing to the stomach."
+  },
+  {
+    "generic_name": "guava",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "guavas",
+      "guava juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Extremely rich in vitamin C and dietary fiber."
+  },
+  {
+    "generic_name": "passion_fruit",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "passionfruit",
+      "maracuya"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Aromatic tropical fruit; rich in fiber and vitamin C."
+  },
+  {
+    "generic_name": "pomegranate",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "pomegranate juice",
+      "pom juice"
+    ],
+    "interaction_profile": "CYP3A4_inhibitor",
+    "gastric_impact": "acidic",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "Pomegranate juice can inhibit intestinal CYP3A4 to a minor extent; monitor medications."
+  },
+  {
+    "generic_name": "kiwi",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "kiwifruit",
+      "kiwis"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Contains actinidin, a proteolytic enzyme that assists protein digestion; high in fiber."
+  },
+  {
+    "generic_name": "avocado",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "alligator pear",
+      "guacamole"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "High in monounsaturated fats; excellent vehicle for enhancing absorption of fat-soluble vitamins and drugs."
+  },
+  {
+    "generic_name": "coconut_flesh",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "coconut",
+      "shredded coconut"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in fiber and medium-chain triglycerides (MCTs)."
+  },
+  {
+    "generic_name": "dragon_fruit",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "pitaya",
+      "dragonfruit"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Mildly sweet fruit with prebiotic fiber from seeds."
+  },
+  {
+    "generic_name": "lychee",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "lychees",
+      "litchi"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sweet tropical fruit; contains polyphenols."
+  },
+  {
+    "generic_name": "rambutan",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "rambutans"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Similar to lychee; sweet white flesh."
+  },
+  {
+    "generic_name": "jackfruit",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "jackfruit meat",
+      "vegan pulled pork"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "High-fiber tropical fruit often used as a meat substitute."
+  },
+  {
+    "generic_name": "star_fruit",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "carambola"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Contains high amounts of oxalate and neurotoxin caramboxin; dangerous in kidney disease."
+  },
+  {
+    "generic_name": "apple_red",
+    "category": "food",
+    "food_group": "pome_fruit",
+    "common_aliases": [
+      "fuji apple",
+      "gala apple"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in pectin (soluble fiber) and malic acid; supports gut motility."
+  },
+  {
+    "generic_name": "apple_green",
+    "category": "food",
+    "food_group": "pome_fruit",
+    "common_aliases": [
+      "granny smith",
+      "green apples"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Tart variety; high in malic acid which can cause mild gastric acidity."
+  },
+  {
+    "generic_name": "pear_bartlett",
+    "category": "food",
+    "food_group": "pome_fruit",
+    "common_aliases": [
+      "bartlett pear",
+      "pears"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Hypoallergenic fruit; high in pectin and sorbitol, promoting bowel movement."
+  },
+  {
+    "generic_name": "pear_asian",
+    "category": "food",
+    "food_group": "pome_fruit",
+    "common_aliases": [
+      "asian pear",
+      "nashi"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Crisp fruit with high water and fiber content."
+  },
+  {
+    "generic_name": "quince",
+    "category": "food",
+    "food_group": "pome_fruit",
+    "common_aliases": [
+      "quinces"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Tart pome fruit; rich in pectin; usually eaten cooked."
+  },
+  {
+    "generic_name": "strawberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "strawberries"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Rich in vitamin C and ellagic acid. Mildly acidic."
+  },
+  {
+    "generic_name": "blueberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "blueberries",
+      "wild blueberries"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in anthocyanins; supports brain health and vascular system."
+  },
+  {
+    "generic_name": "raspberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "raspberries"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Very high in dietary fiber (8g per cup) and ellagic acid."
+  },
+  {
+    "generic_name": "blackberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "blackberries"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High fiber and rich dark anthocyanin pigments."
+  },
+  {
+    "generic_name": "cranberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "cranberries",
+      "cranberry juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Contains proanthocyanidins which prevent urinary tract infections; highly acidic."
+  },
+  {
+    "generic_name": "goji_berry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "wolfberry",
+      "dried goji"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Nutrient dense berry; used in traditional Chinese medicine."
+  },
+  {
+    "generic_name": "elderberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "elderberries"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in anthocyanins; immune stimulant. Must be cooked before consumption."
+  },
+  {
+    "generic_name": "mulberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "mulberries"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sweet berry rich in resveratrol and vitamin C."
+  },
+  {
+    "generic_name": "cherry_sweet",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "bing cherry",
+      "dark sweet cherries"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in anthocyanins and melatonin; supports sleep and joint health."
+  },
+  {
+    "generic_name": "cherry_tart",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "montmorency cherry",
+      "tart cherry juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "High in melatonin and anthocyanins; popular for gout and sleep. Acidic."
+  },
+  {
+    "generic_name": "peach",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "peaches"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Sweet, easy to digest stone fruit; rich in vitamin A and C."
+  },
+  {
+    "generic_name": "nectarine",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "nectarines"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Smooth-skinned peach variant; rich in antioxidants."
+  },
+  {
+    "generic_name": "apricot",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "apricots"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in beta-carotene and dietary fiber."
+  },
+  {
+    "generic_name": "plum",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "plums",
+      "black plum"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sweet stone fruit; contains sorbitol and phenolic compounds."
+  },
+  {
+    "generic_name": "prune",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "dried plum",
+      "prune juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "High sorbitol and fiber content; powerful natural laxative."
+  },
+  {
+    "generic_name": "watermelon",
+    "category": "food",
+    "food_group": "melon",
+    "common_aliases": [
+      "watermelon juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "alkaline",
+    "absorption_effect": "none",
+    "notes": "High water content; rich in citrulline and lycopene. Alkalizing."
+  },
+  {
+    "generic_name": "cantaloupe",
+    "category": "food",
+    "food_group": "melon",
+    "common_aliases": [
+      "rockmelon"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "alkaline",
+    "absorption_effect": "none",
+    "notes": "Very rich in beta-carotene; easily digested and alkalizing."
+  },
+  {
+    "generic_name": "honeydew",
+    "category": "food",
+    "food_group": "melon",
+    "common_aliases": [
+      "honeydew melon"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "alkaline",
+    "absorption_effect": "none",
+    "notes": "Sweet melon with high water content; soothing to stomach."
+  },
+  {
+    "generic_name": "fig_fresh",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "fresh figs"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains ficin, a digestive enzyme; rich in soluble fiber."
+  },
+  {
+    "generic_name": "fig_dried",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "dried figs"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Highly concentrated source of fiber, calcium, and potassium."
+  },
+  {
+    "generic_name": "date_medjool",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "medjool dates",
+      "dried dates"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in natural sugars, potassium, and fiber; quick energy source."
+  },
+  {
+    "generic_name": "raisin",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "raisins",
+      "sultanas"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Dried grapes; concentrated source of potassium and boron."
+  },
+  {
+    "generic_name": "grape_red",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "red grapes"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains resveratrol in skins; rich in vitamin C."
+  },
+  {
+    "generic_name": "grape_green",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "green grapes",
+      "white grapes"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sweet fruit with organic acids; supports hydration."
+  },
+  {
+    "generic_name": "papaya_dried",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "dried papaya"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Dehydrated papaya; concentrated enzymes and fiber."
+  },
+  {
+    "generic_name": "pineapple_dried",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "dried pineapple"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Dehydrated pineapple; rich in sugars and dietary fiber."
+  },
+  {
+    "generic_name": "mango_dried",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "dried mango"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Concentrated mango strips; rich in beta-carotene."
+  },
+  {
+    "generic_name": "coconut_water",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "coconut water"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "alkaline",
+    "absorption_effect": "none",
+    "notes": "Isotonic beverage; exceptionally rich in potassium and electrolytes."
+  },
+  {
+    "generic_name": "acai_berry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "acai pulp",
+      "acai bowl"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in healthy fats and dark anthocyanin pigments; low sugar berry."
+  },
+  {
+    "generic_name": "blackcurrant",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "blackcurrant juice",
+      "cassis"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Very high vitamin C and anthocyanin levels."
+  },
+  {
+    "generic_name": "redcurrant",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "redcurrants"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Tart berry rich in vitamin C and pectin."
+  },
+  {
+    "generic_name": "gooseberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "gooseberries",
+      "amla"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Extremely tart berry; high vitamin C and antioxidant profile."
+  },
+  {
+    "generic_name": "boysenberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "boysenberries"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Cross between raspberry, blackberry, dewberry, and loganberry."
+  },
+  {
+    "generic_name": "marionberry",
+    "category": "food",
+    "food_group": "berry",
+    "common_aliases": [
+      "marionberries"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich blackberry cultivar from Oregon."
+  },
+  {
+    "generic_name": "persimmon",
+    "category": "food",
+    "food_group": "tropical_fruit",
+    "common_aliases": [
+      "persimmons",
+      "fuyu",
+      "hachiya"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in tannins when unripe; sweet and fibrous when ripe."
+  },
+  {
+    "generic_name": "spinach",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "spinach salad",
+      "baby spinach",
+      "cooked spinach"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Extremely rich in oxalates which bind dietary calcium, iron, and magnesium, preventing absorption."
+  },
+  {
+    "generic_name": "kale",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "kale chips",
+      "curly kale"
+    ],
+    "interaction_profile": "vitamin_K_source",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Extremely rich in vitamin K1, directly counteracting warfarin blood thinners. Contains goitrogens."
+  },
+  {
+    "generic_name": "swiss_chard",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "chard",
+      "rainbow chard"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High in oxalates and vitamin K1; monitor calcium binding and blood thinners."
+  },
+  {
+    "generic_name": "collard_greens",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "collards"
+    ],
+    "interaction_profile": "vitamin_K_source",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Traditional green; very high in vitamin K1 and fiber."
+  },
+  {
+    "generic_name": "mustard_greens",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "mustard green"
+    ],
+    "interaction_profile": "vitamin_K_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Pungent green rich in vitamin K1 and glucosinolates."
+  },
+  {
+    "generic_name": "arugula",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "rocket",
+      "arugula salad"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Peppery green; high in dietary nitrates which support nitric oxide and blood pressure."
+  },
+  {
+    "generic_name": "romaine_lettuce",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "romaine",
+      "cos lettuce"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Hydrating green; rich in vitamin A, K, and folate."
+  },
+  {
+    "generic_name": "iceberg_lettuce",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "iceberg"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High water content; low nutrient density but easy to digest."
+  },
+  {
+    "generic_name": "butterhead_lettuce",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "butter lettuce",
+      "bibb lettuce"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Soft texture green; easy to digest."
+  },
+  {
+    "generic_name": "watercress",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "water cress"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Cruciferous leafy green with exceptionally high nutrient density."
+  },
+  {
+    "generic_name": "bok_choy",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "baby bok choy",
+      "pak choi"
+    ],
+    "interaction_profile": "goitrogen",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Cruciferous green; contains glucosinolates (goitrogens) which can interfere with iodine uptake in thyroid."
+  },
+  {
+    "generic_name": "broccoli",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "broccoli florets",
+      "steamed broccoli"
+    ],
+    "interaction_profile": "goitrogen",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "High in sulforaphane and fiber. Can produce significant intestinal gas during fermentation."
+  },
+  {
+    "generic_name": "cauliflower",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "cauliflower rice"
+    ],
+    "interaction_profile": "goitrogen",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Cruciferous vegetable; gas-producing and contains goitrogens. High in fiber."
+  },
+  {
+    "generic_name": "brussels_sprouts",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "brussels sprouts"
+    ],
+    "interaction_profile": "vitamin_K_source",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Extremely high in vitamin K1 and fiber. Strong gas-producing property in colon."
+  },
+  {
+    "generic_name": "cabbage_green",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "green cabbage"
+    ],
+    "interaction_profile": "goitrogen",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Rich in glutamine (helps heal gut lining) but highly gas-producing when raw."
+  },
+  {
+    "generic_name": "cabbage_red",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "red cabbage"
+    ],
+    "interaction_profile": "goitrogen",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Rich in anthocyanin antioxidants and fiber; gas-producing."
+  },
+  {
+    "generic_name": "cabbage_napa",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "napa cabbage",
+      "chinese cabbage"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Mild cabbage; easier to digest than green cabbage."
+  },
+  {
+    "generic_name": "radish",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "radishes",
+      "daikon"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Pungent root vegetable; supports liver bile flow and digestion."
+  },
+  {
+    "generic_name": "turnip",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "turnips"
+    ],
+    "interaction_profile": "goitrogen",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Root vegetable containing goitrogens; rich in vitamin C."
+  },
+  {
+    "generic_name": "rutabaga",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "rutabagas",
+      "swede"
+    ],
+    "interaction_profile": "goitrogen",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Yellow root vegetable; high in goitrogens."
+  },
+  {
+    "generic_name": "water_chestnut",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "water chestnuts"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Crisp aquatic vegetable; high in starch and fiber."
+  },
+  {
+    "generic_name": "bamboo_shoot",
+    "category": "food",
+    "food_group": "shoot",
+    "common_aliases": [
+      "bamboo shoots"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fibrous shoot used in Asian cuisine; rich in silica."
+  },
+  {
+    "generic_name": "carrot",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "carrots",
+      "carrot juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Exceptionally rich in beta-carotene (pro-vitamin A); supports eye and skin health."
+  },
+  {
+    "generic_name": "sweet_potato",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "yam",
+      "sweet potatoes"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Rich in beta-carotene and soluble fiber; very soothing to the digestive tract."
+  },
+  {
+    "generic_name": "potato_russet",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "baked potato",
+      "russet potato"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High glycemic starch; contains potassium. Solanine in green skins is toxic."
+  },
+  {
+    "generic_name": "potato_red",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "red potatoes"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Waxier starch; lower glycemic impact than russet when cooled (resistant starch)."
+  },
+  {
+    "generic_name": "beetroot",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "beets",
+      "beet juice"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High in dietary nitrates (lowers blood pressure) and oxalates (kidney stone risk). May turn urine red."
+  },
+  {
+    "generic_name": "parsnip",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "parsnips"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sweet root vegetable; rich in soluble fiber and potassium."
+  },
+  {
+    "generic_name": "ginger",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "ginger root",
+      "ginger tea"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Contains gingerols; powerful anti-nausea, anti-inflammatory, and gastric prokinetic."
+  },
+  {
+    "generic_name": "turmeric",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "turmeric root",
+      "curcuma"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains curcumin; powerful anti-inflammatory and antioxidant root."
+  },
+  {
+    "generic_name": "garlic",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "garlic clove",
+      "minced garlic"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Contains allicin; potent antimicrobial. Can cause heartburn and gastric irritation when raw."
+  },
+  {
+    "generic_name": "onion_yellow",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "yellow onion",
+      "cooked onion"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Rich in quercetin and prebiotic inulin; can cause significant gas in FODMAP-sensitive individuals."
+  },
+  {
+    "generic_name": "onion_red",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "red onion"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "High in quercetin and anthocyanins; gas producing when raw."
+  },
+  {
+    "generic_name": "onion_white",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "white onion"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Strong allium flavor; prebiotic source, gas-producing."
+  },
+  {
+    "generic_name": "shallot",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "shallots"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Mild allium vegetable; rich in antioxidants and fructans."
+  },
+  {
+    "generic_name": "leek",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "leeks"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Rich in prebiotic prebiotic fiber (inulin); supports gut health but produces gas."
+  },
+  {
+    "generic_name": "scallion",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "green onion",
+      "spring onion"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Green tops are low-FODMAP and easy to digest; white bulbs are high-FODMAP."
+  },
+  {
+    "generic_name": "chives",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "chive"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Mild herb in the allium family; easy on stomach."
+  },
+  {
+    "generic_name": "tomato_red",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "tomatoes",
+      "tomato sauce",
+      "cooked tomato"
+    ],
+    "interaction_profile": "acidic",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Highly acidic nightshade; rich in lycopene. Can trigger acid reflux/GERD."
+  },
+  {
+    "generic_name": "tomato_cherry",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "cherry tomatoes"
+    ],
+    "interaction_profile": "acidic",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Sweet, acidic nightshade fruit eaten as vegetable."
+  },
+  {
+    "generic_name": "eggplant",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "aubergine"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Nightshade containing solanine; spongy texture absorbing dietary fats."
+  },
+  {
+    "generic_name": "bell_pepper_red",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "red bell pepper"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Very high in vitamin C; nightshade family, usually well-tolerated."
+  },
+  {
+    "generic_name": "bell_pepper_green",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "green bell pepper"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Unripe pepper; contains more solanine and can cause indigestion in sensitive stomachs."
+  },
+  {
+    "generic_name": "jalapeno",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "jalapeno pepper",
+      "spicy pepper"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Contains capsaicin; irritates gastric mucosa, increases motility, causes burning."
+  },
+  {
+    "generic_name": "cayenne_pepper",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "cayenne",
+      "chili powder"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Capsaicin-rich spice; raises body temperature, irritates stomach lining, speeds transit."
+  },
+  {
+    "generic_name": "cucumber",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "cucumbers"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Highly hydrating (95% water); refreshing and very easy to digest. Skins can be bitter."
+  },
+  {
+    "generic_name": "zucchini",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "courgette"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Extremely easy to digest; low in fiber and soft on the stomach when cooked."
+  },
+  {
+    "generic_name": "yellow_squash",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "summer squash"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Mild, easily digested summer vegetable; soft fiber."
+  },
+  {
+    "generic_name": "butternut_squash",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "butternut"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Rich in vitamin A and soluble fiber; gentle on digestive tract."
+  },
+  {
+    "generic_name": "pumpkin",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "canned pumpkin",
+      "pumpkin puree"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Excellent source of soluble fiber and potassium; highly soothing for diarrhea/constipation."
+  },
+  {
+    "generic_name": "celery",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "celery juice",
+      "celery sticks"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in apigenin and water; celery juice is popular for stomach acid support."
+  },
+  {
+    "generic_name": "asparagus",
+    "category": "food",
+    "food_group": "shoot",
+    "common_aliases": [
+      "asparagus spears"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Contains asparagine and prebiotic inulin. Produces distinct sulfur smell in urine."
+  },
+  {
+    "generic_name": "artichoke_globe",
+    "category": "food",
+    "food_group": "flower",
+    "common_aliases": [
+      "artichoke hearts"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Extremely rich in prebiotic inulin; stimulates bile production. Strongly gas-producing."
+  },
+  {
+    "generic_name": "artichoke_jerusalem",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "sunchoke"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Nicknamed 'fartichoke' due to extreme concentration of inulin; causes severe flatulence."
+  },
+  {
+    "generic_name": "fennel_bulb",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "fennel salad",
+      "finocchio"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains anethole; acts as antispasmodic, reducing gas, bloating, and stomach cramps."
+  },
+  {
+    "generic_name": "okra",
+    "category": "food",
+    "food_group": "pods",
+    "common_aliases": [
+      "ladyfinger",
+      "bhindi"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains highly mucilaginous slime; coats and heals stomach lining."
+  },
+  {
+    "generic_name": "green_beans",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "string beans",
+      "snap beans"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Low-FODMAP legume; easy to digest compared to dry beans."
+  },
+  {
+    "generic_name": "peas_green",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "sweet peas",
+      "garden peas"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Contains starch and fiber; can cause mild gas in sensitive individuals."
+  },
+  {
+    "generic_name": "cabbage_savoy",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "savoy cabbage"
+    ],
+    "interaction_profile": "goitrogen",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Crinkly-leafed cabbage; high in fiber and goitrogens."
+  },
+  {
+    "generic_name": "brussel_sprouts_shredded",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "shredded brussels sprouts"
+    ],
+    "interaction_profile": "vitamin_K_source",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Raw shredded sprouts; very high vitamin K1 and fiber content."
+  },
+  {
+    "generic_name": "horseradish",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "prepared horseradish"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Extremely pungent root containing mustard oil; irritates nasal and gastric mucosa."
+  },
+  {
+    "generic_name": "wasabi",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "wasabi paste"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Pungent cruciferous paste; stimulates digestion but irritates stomach in large doses."
+  },
+  {
+    "generic_name": "watercress_greens",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "watercress salad"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Peppery aquatic greens; highly nutrient-dense."
+  },
+  {
+    "generic_name": "endive",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "chicory",
+      "belgian endive"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Bitter leaf; contains intybin which stimulates bile and digestive secretions."
+  },
+  {
+    "generic_name": "radicchio",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "italian chicory"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Bitter red leaf; stimulates gastric juices and liver bile."
+  },
+  {
+    "generic_name": "dandelion_greens",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      "dandelion salad"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Very bitter wild green; powerful liver detoxifier and bile stimulant."
+  },
+  {
+    "generic_name": "purslane",
+    "category": "food",
+    "food_group": "leafy_green",
+    "common_aliases": [
+      " purslane greens"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Succulent weed; highest omega-3 fat content of any green plant. High oxalates."
+  },
+  {
+    "generic_name": "seaweed_nori",
+    "category": "food",
+    "food_group": "marine",
+    "common_aliases": [
+      "nori sheets",
+      "seaweed snacks"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Dried seaweed sheets; rich in iodine, tyrosine, and trace minerals."
+  },
+  {
+    "generic_name": "seaweed_kelp",
+    "category": "food",
+    "food_group": "marine",
+    "common_aliases": [
+      "kombu",
+      "kelp noodles"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Extremely rich in iodine; supports thyroid hormone production."
+  },
+  {
+    "generic_name": "seaweed_wakame",
+    "category": "food",
+    "food_group": "marine",
+    "common_aliases": [
+      "wakame salad",
+      "seaweed salad"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Used in miso soup; high in fucoxanthin and minerals."
+  },
+  {
+    "generic_name": "sprouts_alfalfa",
+    "category": "food",
+    "food_group": "sprouts",
+    "common_aliases": [
+      "alfalfa sprouts"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Raw sprouted alfalfa seeds; rich in enzymes and vitamins."
+  },
+  {
+    "generic_name": "sprouts_broccoli",
+    "category": "food",
+    "food_group": "sprouts",
+    "common_aliases": [
+      "broccoli sprouts"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains up to 100x the sulforaphane concentration of mature broccoli."
+  },
+  {
+    "generic_name": "sprouts_mung_bean",
+    "category": "food",
+    "food_group": "sprouts",
+    "common_aliases": [
+      "bean sprouts"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Crisp sprouted mung beans; easy to digest."
+  },
+  {
+    "generic_name": "mushroom_button",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "white button mushrooms"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Common mushroom; contains beta-glucans. Best cooked to destroy agaritine."
+  },
+  {
+    "generic_name": "mushroom_cremini",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "baby bella"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Brown button mushroom variety; rich in selenium and B vitamins."
+  },
+  {
+    "generic_name": "mushroom_portobello",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "portobello cap"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Large mature cremini; meaty texture often used as burger substitute."
+  },
+  {
+    "generic_name": "mushroom_shiitake",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "shiitake mushrooms"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains lentinan; supports immune system and lowers cholesterol."
+  },
+  {
+    "generic_name": "mushroom_oyster",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "oyster mushrooms"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains natural statins (lovastatin) which support healthy lipid levels."
+  },
+  {
+    "generic_name": "mushroom_maitake_food",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "hen of the woods"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich earthy mushroom; supports immune function."
+  },
+  {
+    "generic_name": "mushroom_lion_mane_food",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "lions mane steaks"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Delicious culinary mushroom; supports cognitive health and nerve growth."
+  },
+  {
+    "generic_name": "taro",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "taro root"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Starchy tropical root; must be cooked to destroy calcium oxalate crystals."
+  },
+  {
+    "generic_name": "cassava",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "yuca",
+      "tapioca"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Starchy root; source of tapioca. Must be properly cooked to remove cyanogenic glucosides."
+  },
+  {
+    "generic_name": "yam_true",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "african yam"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Starchy African root; distinct from sweet potato."
+  },
+  {
+    "generic_name": "jicama",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "yam bean"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Crisp white root; rich in prebiotic oligofructose fiber (inulin)."
+  },
+  {
+    "generic_name": "sunchoke_jerusalem_artichoke",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "jerusalem artichoke bulb"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "High inulin content; causes strong flatulence."
+  },
+  {
+    "generic_name": "wheat_whole",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "whole wheat bread",
+      "whole wheat flour",
+      "bulgur"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Contains gluten (protein irritant for celiac) and phytic acid which chelates minerals."
+  },
+  {
+    "generic_name": "wheat_refined",
+    "category": "food",
+    "food_group": "refined_grain",
+    "common_aliases": [
+      "white bread",
+      "white flour",
+      "croissant"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Refined starch; lacks fiber, fast glucose release. Easier to digest than whole wheat."
+  },
+  {
+    "generic_name": "oats_whole",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "oatmeal",
+      "rolled oats",
+      "steel cut oats"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains beta-glucan fiber which lowers cholesterol and coats/soothes the gut."
+  },
+  {
+    "generic_name": "barley",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "pearl barley"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Gluten-containing grain; very rich in beta-glucans and soluble fiber."
+  },
+  {
+    "generic_name": "rye",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "rye bread",
+      "pumpernickel"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Dense gluten grain; high fiber and phytosterols."
+  },
+  {
+    "generic_name": "quinoa",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "quinoa salad"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Pseudo-grain; complete protein containing all 9 essential amino acids. Gluten-free."
+  },
+  {
+    "generic_name": "rice_white",
+    "category": "food",
+    "food_group": "refined_grain",
+    "common_aliases": [
+      "jasmine rice",
+      "basmati rice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Extremely easy to digest; minimal fiber, low allergenicity. Ideal gut resting food."
+  },
+  {
+    "generic_name": "rice_brown",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "brown rice"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Whole grain; contains phytic acid in bran which binds minerals. Harder to digest than white."
+  },
+  {
+    "generic_name": "rice_wild",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "wild rice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Aquatic grass seed; higher protein and fiber than white rice."
+  },
+  {
+    "generic_name": "quinoa_red",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "red quinoa"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Higher antioxidant profile than white quinoa; holds shape well."
+  },
+  {
+    "generic_name": "millet",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "millet porridge"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Small gluten-free grain; highly alkalizing and easy to digest."
+  },
+  {
+    "generic_name": "sorghum",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "sorghum flour"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Ancient gluten-free grain; rich in polyphenols."
+  },
+  {
+    "generic_name": "amaranth",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "amaranth grain"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Tiny ancient pseudo-grain; rich in protein and squalene."
+  },
+  {
+    "generic_name": "buckwheat",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "kasha",
+      "soba noodles"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Gluten-free seed rich in rutin (strengthens blood vessels) and fiber."
+  },
+  {
+    "generic_name": "spelt",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "spelt bread"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Ancient wheat variety; contains gluten and phytic acid."
+  },
+  {
+    "generic_name": "kamut",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "khorasan wheat"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Ancient large wheat grain; rich in selenium."
+  },
+  {
+    "generic_name": "teff",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "injera"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Tiny Ethiopian grain; rich in iron and calcium. Used to make injera."
+  },
+  {
+    "generic_name": "corn_yellow",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "sweet corn",
+      "corn on the cob"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Contains insoluble cellulose fiber; hard to digest, passes intact."
+  },
+  {
+    "generic_name": "corn_meal",
+    "category": "food",
+    "food_group": "refined_grain",
+    "common_aliases": [
+      "polenta",
+      "corn grits"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Ground corn; gluten-free staple starch."
+  },
+  {
+    "generic_name": "popcorn",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "popcorn"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Whole grain air-popped snack; high volume fiber."
+  },
+  {
+    "generic_name": "pasta_semolina",
+    "category": "food",
+    "food_group": "refined_grain",
+    "common_aliases": [
+      "spaghetti",
+      "macaroni"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Refined durum wheat pasta; standard high starch food."
+  },
+  {
+    "generic_name": "pasta_whole_wheat",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "whole wheat pasta"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Fibrous whole wheat pasta; slower digestion."
+  },
+  {
+    "generic_name": "couscous",
+    "category": "food",
+    "food_group": "refined_grain",
+    "common_aliases": [
+      "couscous pasta"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Tiny semolina pasta granules; fast cooking starch."
+  },
+  {
+    "generic_name": "bulgur_wheat",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "bulgur"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Cracked parboiled whole wheat; high in fiber."
+  },
+  {
+    "generic_name": "bran_wheat",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "wheat bran",
+      "all bran"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Isolated outer shell of wheat; extremely high in insoluble fiber and phytates."
+  },
+  {
+    "generic_name": "bran_oat",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "oat bran"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Isolated outer shell of oats; extremely high soluble beta-glucan fiber."
+  },
+  {
+    "generic_name": "tapioca",
+    "category": "food",
+    "food_group": "refined_grain",
+    "common_aliases": [
+      "tapioca pearls",
+      "boba"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Isolated starch from cassava root; very easy to digest, binding properties."
+  },
+  {
+    "generic_name": "sago",
+    "category": "food",
+    "food_group": "refined_grain",
+    "common_aliases": [
+      "sago pearls"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Isolated starch from sago palm stem; soothing carb."
+  },
+  {
+    "generic_name": "arrowroot",
+    "category": "food",
+    "food_group": "refined_grain",
+    "common_aliases": [
+      "arrowroot powder"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Gluten-free starch; highly digestible and soothing to mucosal linings."
+  },
+  {
+    "generic_name": "wild_rice_black",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "black wild rice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in anthocyanin pigments and fiber."
+  },
+  {
+    "generic_name": "milk_whole",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "whole milk",
+      "cow milk"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "High calcium content (300mg/cup) chelates antibiotics (quinolones, tetracyclines) and iron, preventing absorption."
+  },
+  {
+    "generic_name": "milk_skim",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "skim milk",
+      "fat free milk"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Lacks fats; contains calcium which chelates medications and iron."
+  },
+  {
+    "generic_name": "milk_low_fat",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "2 percent milk"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Low-fat cow milk; calcium content binds divalent minerals and antibiotics."
+  },
+  {
+    "generic_name": "yogurt_plain",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "greek yogurt",
+      "plain yogurt"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "soothing",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Contains probiotics (live cultures); soothing to GI tract, but calcium chelates drugs."
+  },
+  {
+    "generic_name": "yogurt_low_fat",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "low fat yogurt"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "soothing",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Cultured dairy; calcium chelates drugs."
+  },
+  {
+    "generic_name": "kefir_plain",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "kefir"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "soothing",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Fermented liquid yogurt; extremely rich in probiotics. Calcium inhibits drug absorption."
+  },
+  {
+    "generic_name": "cheese_cheddar",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "cheddar cheese"
+    ],
+    "interaction_profile": "tyramine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Aged cheese containing tyramine; can trigger hypertensive crisis with MAO inhibitors. High calcium."
+  },
+  {
+    "generic_name": "cheese_parmesan",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "parmesan",
+      "parmigiano reggiano"
+    ],
+    "interaction_profile": "tyramine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Highly aged hard cheese; very high in tyramine and calcium. Avoid with MAOIs."
+  },
+  {
+    "generic_name": "cheese_blue",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "roquefort",
+      "gorgonzola"
+    ],
+    "interaction_profile": "tyramine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Mold-ripened aged cheese; high tyramine content poses MAOI risk."
+  },
+  {
+    "generic_name": "cheese_mozzarella",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "fresh mozzarella"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Fresh cheese; lower in tyramine, but rich in calcium which chelates minerals."
+  },
+  {
+    "generic_name": "cheese_swiss",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "emmental"
+    ],
+    "interaction_profile": "tyramine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Aged cheese with holes; moderate-high tyramine and high calcium."
+  },
+  {
+    "generic_name": "cheese_feta",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "feta cheese"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Brined cheese; high sodium and calcium content."
+  },
+  {
+    "generic_name": "cheese_cottage",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "cottage cheese"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fresh curds; rich in casein protein and calcium. Low tyramine."
+  },
+  {
+    "generic_name": "cheese_ricotta",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "ricotta"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fresh whey cheese; sweet, creamy, rich in calcium."
+  },
+  {
+    "generic_name": "cheese_cream",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "cream cheese"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High fat fresh cheese; low calcium, low tyramine. Vehicle for fat-soluble drugs."
+  },
+  {
+    "generic_name": "butter",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "salted butter",
+      "unsalted butter"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Pure dairy fat; excellent vehicle to enhance absorption of fat-soluble vitamins/drugs."
+  },
+  {
+    "generic_name": "ghee",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "clarified butter"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Clarified butter; free of casein and lactose. High fat enhances fat-soluble absorption."
+  },
+  {
+    "generic_name": "cream_heavy",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "heavy whipping cream"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "High fat dairy cream; enhances fat-soluble absorption."
+  },
+  {
+    "generic_name": "cream_sour",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "sour cream"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Cultured high-fat cream; mild acidity, contains lactic acid."
+  },
+  {
+    "generic_name": "buttermilk",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "buttermilk liquid"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Cultured milk byproduct; sour taste, rich in calcium."
+  },
+  {
+    "generic_name": "goat_milk",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "goat milk liquid"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Easier to digest fat globules than cow milk, but calcium still chelates drugs."
+  },
+  {
+    "generic_name": "goat_cheese",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "chevre"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Fresh goat cheese; tangy taste, contains calcium."
+  },
+  {
+    "generic_name": "sheep_yogurt",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "sheep milk yogurt"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "soothing",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Rich cultured sheep milk; high calcium."
+  },
+  {
+    "generic_name": "whey_powder",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "whey isolate powder"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Highly concentrated dairy protein; rapid absorption."
+  },
+  {
+    "generic_name": "casein_powder",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "casein protein powder"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Slow digesting milk protein powder; forms gel in stomach."
+  },
+  {
+    "generic_name": "colostrum_liquid",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "colostrum"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Pre-milk fluid; rich in antibodies and immune factors."
+  },
+  {
+    "generic_name": "beef_steak",
+    "category": "food",
+    "food_group": "red_meat",
+    "common_aliases": [
+      "ribeye",
+      "sirloin",
+      "beef"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in heme iron, zinc, and protein; requires significant stomach acid for digestion."
+  },
+  {
+    "generic_name": "beef_ground",
+    "category": "food",
+    "food_group": "red_meat",
+    "common_aliases": [
+      "hamburger meat",
+      "ground beef"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Easier to digest than steak due to ground fiber; rich in iron, zinc, B12."
+  },
+  {
+    "generic_name": "pork_chop",
+    "category": "food",
+    "food_group": "red_meat",
+    "common_aliases": [
+      "pork loin",
+      "pork"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in thiamine (B1) and protein."
+  },
+  {
+    "generic_name": "pork_bacon",
+    "category": "food",
+    "food_group": "red_meat",
+    "common_aliases": [
+      "bacon strips",
+      "cured bacon"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "High fat, salt, and nitrates. Can trigger gastric irritation and acid reflux."
+  },
+  {
+    "generic_name": "pork_ham",
+    "category": "food",
+    "food_group": "red_meat",
+    "common_aliases": [
+      "deli ham",
+      "cured ham"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Processed, high-sodium meat."
+  },
+  {
+    "generic_name": "chicken_breast",
+    "category": "food",
+    "food_group": "poultry",
+    "common_aliases": [
+      "chicken",
+      "grilled chicken"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Lean protein; very easy to digest, low fat. Ideal for recovery diet."
+  },
+  {
+    "generic_name": "chicken_thigh",
+    "category": "food",
+    "food_group": "poultry",
+    "common_aliases": [
+      "dark meat chicken"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Higher fat poultry cut; rich in zinc and B vitamins."
+  },
+  {
+    "generic_name": "turkey_breast",
+    "category": "food",
+    "food_group": "poultry",
+    "common_aliases": [
+      "sliced turkey",
+      "ground turkey"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Lean protein; rich in tryptophan (precursor to serotonin/melatonin)."
+  },
+  {
+    "generic_name": "duck_breast",
+    "category": "food",
+    "food_group": "poultry",
+    "common_aliases": [
+      "duck meat"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich, dark poultry meat; high fat content."
+  },
+  {
+    "generic_name": "salmon",
+    "category": "food",
+    "food_group": "fish",
+    "common_aliases": [
+      "wild salmon",
+      "atlantic salmon"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Rich in EPA/DHA omega-3 fatty acids and vitamin D. Enhances fat-soluble absorption."
+  },
+  {
+    "generic_name": "tuna_canned",
+    "category": "food",
+    "food_group": "fish",
+    "common_aliases": [
+      "canned light tuna",
+      "albacore"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Lean protein; high selenium. Risk of mercury accumulation with high intake."
+  },
+  {
+    "generic_name": "tuna_ahi",
+    "category": "food",
+    "food_group": "fish",
+    "common_aliases": [
+      "tuna steak",
+      "ahi tuna"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Meaty fish; rich in protein, selenium, and B vitamins."
+  },
+  {
+    "generic_name": "sardines",
+    "category": "food",
+    "food_group": "fish",
+    "common_aliases": [
+      "canned sardines"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Eaten with bones; rich source of calcium (inhibits drug absorption), vitamin D, and omega-3s."
+  },
+  {
+    "generic_name": "mackerel",
+    "category": "food",
+    "food_group": "fish",
+    "common_aliases": [
+      "king mackerel"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Oily fish high in omega-3s; enhances fat-soluble drug absorption."
+  },
+  {
+    "generic_name": "anchovies",
+    "category": "food",
+    "food_group": "fish",
+    "common_aliases": [
+      "anchovy paste"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Small salty fish; rich in omega-3s and calcium if bones eaten."
+  },
+  {
+    "generic_name": "cod",
+    "category": "food",
+    "food_group": "fish",
+    "common_aliases": [
+      "scrod",
+      "cod fillet"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Very lean white fish; exceptionally easy to digest."
+  },
+  {
+    "generic_name": "halibut",
+    "category": "food",
+    "food_group": "fish",
+    "common_aliases": [
+      "halibut steak"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Firm white fish; rich in selenium and potassium."
+  },
+  {
+    "generic_name": "trout",
+    "category": "food",
+    "food_group": "fish",
+    "common_aliases": [
+      "rainbow trout"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Oily freshwater fish rich in omega-3 fatty acids."
+  },
+  {
+    "generic_name": "shrimp",
+    "category": "food",
+    "food_group": "shellfish",
+    "common_aliases": [
+      "prawns"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Low-fat shellfish; high in cholesterol, selenium, and astaxanthin."
+  },
+  {
+    "generic_name": "crab",
+    "category": "food",
+    "food_group": "shellfish",
+    "common_aliases": [
+      "king crab legs"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in zinc, copper, and vitamin B12."
+  },
+  {
+    "generic_name": "lobster",
+    "category": "food",
+    "food_group": "shellfish",
+    "common_aliases": [
+      "lobster tail"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in zinc, copper, and selenium."
+  },
+  {
+    "generic_name": "clams",
+    "category": "food",
+    "food_group": "shellfish",
+    "common_aliases": [
+      "steamed clams"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Highest food source of vitamin B12; exceptionally rich in iron and selenium."
+  },
+  {
+    "generic_name": "oysters",
+    "category": "food",
+    "food_group": "shellfish",
+    "common_aliases": [
+      "raw oysters"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Highest food source of zinc; supports immune and testosterone health."
+  },
+  {
+    "generic_name": "scallops",
+    "category": "food",
+    "food_group": "shellfish",
+    "common_aliases": [
+      "sea scallops"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Lean, sweet shellfish; rich in vitamin B12 and selenium."
+  },
+  {
+    "generic_name": "mussels",
+    "category": "food",
+    "food_group": "shellfish",
+    "common_aliases": [
+      "steamed mussels"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in omega-3s, iron, selenium, and B12."
+  },
+  {
+    "generic_name": "egg_white",
+    "category": "food",
+    "food_group": "egg",
+    "common_aliases": [
+      "egg whites"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Pure albumin protein; very low fat, easy to digest."
+  },
+  {
+    "generic_name": "egg_yolk",
+    "category": "food",
+    "food_group": "egg",
+    "common_aliases": [
+      "yolks"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Rich in lecithin, choline, lutein, and fat-soluble vitamins. Enhances absorption."
+  },
+  {
+    "generic_name": "egg_whole",
+    "category": "food",
+    "food_group": "egg",
+    "common_aliases": [
+      "scrambled eggs",
+      "boiled egg"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Highly bioavailable protein; yolk contains vitamins, white contains protein."
+  },
+  {
+    "generic_name": "tofu_firm",
+    "category": "food",
+    "food_group": "protein_rich",
+    "common_aliases": [
+      "soybean curd",
+      "tofu"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Soy product often set with calcium sulfate; rich in calcium and phytoestrogens."
+  },
+  {
+    "generic_name": "tofu_silken",
+    "category": "food",
+    "food_group": "protein_rich",
+    "common_aliases": [
+      "soft tofu"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Very soft soy curd; extremely easy to digest, soothing on stomach."
+  },
+  {
+    "generic_name": "tempeh",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "fermented soy block"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fermented whole soybeans; rich in protein, fiber, and probiotics. Easier to digest than tofu."
+  },
+  {
+    "generic_name": "edamame",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "soybeans in pod"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Whole green soybeans; rich in protein, fiber, and folate."
+  },
+  {
+    "generic_name": "lentils_brown",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "brown lentil soup"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "High in protein, fiber, and phytates (chelates iron/zinc). Highly gas-producing."
+  },
+  {
+    "generic_name": "lentils_red",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "red dahl"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Decorticated lentils (skins removed); much easier to digest and less gas-producing."
+  },
+  {
+    "generic_name": "chickpeas",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "garbanzo beans",
+      "hummus"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "High fiber and protein legume; produces significant gas in lower gut."
+  },
+  {
+    "generic_name": "black_beans",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "turtle beans"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Rich in anthocyanin pigments, fiber, and phytates. Gas-producing."
+  },
+  {
+    "generic_name": "kidney_beans",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "red kidney beans"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Must be fully boiled to destroy toxic lectin phytohemagglutinin. Gas-producing."
+  },
+  {
+    "generic_name": "pinto_beans",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "pinto bean"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Standard Mexican bean; high fiber, gas-producing."
+  },
+  {
+    "generic_name": "navy_beans",
+    "category": "food",
+    "food_group": "legume",
+    "common_aliases": [
+      "baked beans"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Used in commercial baked beans; highly flatulent due to oligosaccharides."
+  },
+  {
+    "generic_name": "soy_protein_isolate",
+    "category": "food",
+    "food_group": "processed",
+    "common_aliases": [
+      "soy protein shake"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Highly refined soy protein; fast absorbing."
+  },
+  {
+    "generic_name": "beef_jerky",
+    "category": "food",
+    "food_group": "processed",
+    "common_aliases": [
+      "jerky"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Dehydrated salted beef; tough to digest, high sodium."
+  },
+  {
+    "generic_name": "almond",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "almonds",
+      "almond milk"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High in phytates, oxalates, and magnesium. Oxalates bind dietary calcium."
+  },
+  {
+    "generic_name": "walnut",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "walnuts"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in plant omega-3 ALA and polyphenols. Enhances fat-soluble absorption."
+  },
+  {
+    "generic_name": "pecan",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "pecans"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High fat nut; rich in zinc, manganese, and antioxidants."
+  },
+  {
+    "generic_name": "cashew",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "cashews",
+      "cashew butter"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in magnesium and copper; contains moderate oxalates."
+  },
+  {
+    "generic_name": "pistachio",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "pistachios"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains lutein, zeaxanthin, and prebiotic fibers."
+  },
+  {
+    "generic_name": "macadamia",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "macadamia nuts"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Highest fat nut (mostly monounsaturated); excellent vehicle for fat-soluble vitamins."
+  },
+  {
+    "generic_name": "brazil_nut",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "brazil nuts"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Richest food source of selenium (one nut provides 90mcg, 100%+ DV). Limit to 2/day."
+  },
+  {
+    "generic_name": "hazelnut",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "filberts"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in vitamin E, manganese, and healthy fats."
+  },
+  {
+    "generic_name": "peanut",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "peanuts",
+      "peanut butter"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Botanically a legume; rich in protein, resveratrol, and fats. Common severe allergen."
+  },
+  {
+    "generic_name": "chia_seed",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "chia seeds",
+      "chia pudding"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Forms mucilaginous gel in water; highly soothing to stomach lining and slows digestion."
+  },
+  {
+    "generic_name": "flaxseed_ground",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "ground flax",
+      "flaxmeal"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in lignans (phytoestrogens) and soluble fiber. Must be ground to absorb."
+  },
+  {
+    "generic_name": "hemp_seed",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "hemp hearts"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Complete protein source; rich in magnesium, zinc, and Omega-3/6 fats."
+  },
+  {
+    "generic_name": "pumpkin_seed",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "pepitas"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich source of zinc, magnesium, and phytosterols; supports prostate health."
+  },
+  {
+    "generic_name": "sunflower_seed",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "sunflower seeds",
+      "sunflower butter"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in vitamin E, selenium, and copper."
+  },
+  {
+    "generic_name": "sesame_seed",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "tahini",
+      "sesame seeds"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Rich in calcium (inhibits drug absorption), sesamin, and copper."
+  },
+  {
+    "generic_name": "pine_nut",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "pignoli"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains pinolenic acid which triggers satiety hormones."
+  },
+  {
+    "generic_name": "chestnut",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "roasted chestnuts"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Low fat, high starch nut; rich in vitamin C."
+  },
+  {
+    "generic_name": "almond_butter",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "almond butter spread"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Ground almonds; easier to digest but retains oxalate levels."
+  },
+  {
+    "generic_name": "peanut_butter_smooth",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "creamy peanut butter"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Highly digestible ground peanuts; calorie dense protein source."
+  },
+  {
+    "generic_name": "tahini",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "sesame paste"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Ground sesame seeds; rich in calcium and healthy fats."
+  },
+  {
+    "generic_name": "sesame_oil",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "toasted sesame oil"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Aromatic oil rich in sesamol and sesamolin antioxidants."
+  },
+  {
+    "generic_name": "coconut_shredded",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "shredded coconut flakes"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "High fiber coconut flesh; sweet flavor."
+  },
+  {
+    "generic_name": "poppy_seed",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "poppy seeds"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains trace opiates; can interfere with drug tests. Rich in calcium."
+  },
+  {
+    "generic_name": "sunflower_butter",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "sunflower seed butter"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Nut-free alternative spread; rich in vitamin E."
+  },
+  {
+    "generic_name": "cashew_butter",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "cashew spread"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Creamy ground cashew spread."
+  },
+  {
+    "generic_name": "coffee_black",
+    "category": "food",
+    "food_group": "beverage_caffeinated",
+    "common_aliases": [
+      "black coffee",
+      "espresso",
+      "caffeine"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Caffeine stimulates gastrin and acid secretion; can irritate gastric lining. Speeds transit."
+  },
+  {
+    "generic_name": "coffee_with_milk",
+    "category": "food",
+    "food_group": "beverage_caffeinated",
+    "common_aliases": [
+      "latte",
+      "cappuccino"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "irritant",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Caffeine irritates stomach; milk calcium chelates antibiotics and iron."
+  },
+  {
+    "generic_name": "tea_black",
+    "category": "food",
+    "food_group": "beverage_caffeinated",
+    "common_aliases": [
+      "black tea",
+      "earl grey"
+    ],
+    "interaction_profile": "iron_inhibitor",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Contains tannins and polyphenols that chelate non-heme iron, reducing absorption by 60%."
+  },
+  {
+    "generic_name": "tea_green",
+    "category": "food",
+    "food_group": "beverage_caffeinated",
+    "common_aliases": [
+      "green tea",
+      "matcha"
+    ],
+    "interaction_profile": "iron_inhibitor",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Contains EGCG and tannins that inhibit iron absorption. Contains caffeine."
+  },
+  {
+    "generic_name": "tea_chamomile",
+    "category": "food",
+    "food_group": "beverage_herbal",
+    "common_aliases": [
+      "chamomile tea",
+      "herbal tea"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains apigenin; relaxes gastrointestinal smooth muscle (antispasmodic)."
+  },
+  {
+    "generic_name": "tea_peppermint",
+    "category": "food",
+    "food_group": "beverage_herbal",
+    "common_aliases": [
+      "peppermint tea"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains menthol; relaxes lower esophageal sphincter. Avoid in GERD/reflux."
+  },
+  {
+    "generic_name": "tea_ginger_food",
+    "category": "food",
+    "food_group": "beverage_herbal",
+    "common_aliases": [
+      "ginger tea"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Spicy herbal tea; highly effective for nausea and gastric emptying."
+  },
+  {
+    "generic_name": "tea_hibiscus",
+    "category": "food",
+    "food_group": "beverage_herbal",
+    "common_aliases": [
+      "sour tea"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Tart red tea; can lower blood pressure. Acidic."
+  },
+  {
+    "generic_name": "alcohol_beer",
+    "category": "food",
+    "food_group": "beverage_alcoholic",
+    "common_aliases": [
+      "beer",
+      "lager",
+      "ale"
+    ],
+    "interaction_profile": "tyramine_source",
+    "gastric_impact": "irritant",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "Contains yeast tyramine (MAOI risk); alcohol irritates stomach, competes for liver CYP enzymes."
+  },
+  {
+    "generic_name": "alcohol_wine_red",
+    "category": "food",
+    "food_group": "beverage_alcoholic",
+    "common_aliases": [
+      "red wine",
+      "cabernet"
+    ],
+    "interaction_profile": "tyramine_source",
+    "gastric_impact": "irritant",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "High in tyramine and histamines; triggers headaches and flushing. Alcohol irritates stomach."
+  },
+  {
+    "generic_name": "alcohol_wine_white",
+    "category": "food",
+    "food_group": "beverage_alcoholic",
+    "common_aliases": [
+      "white wine",
+      "chardonnay"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "Acidic alcoholic beverage; irritates stomach mucosa."
+  },
+  {
+    "generic_name": "alcohol_spirits",
+    "category": "food",
+    "food_group": "beverage_alcoholic",
+    "common_aliases": [
+      "vodka",
+      "whiskey",
+      "tequila"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "High alcohol concentration; directly damages gastric mucosal barrier. Reflux trigger."
+  },
+  {
+    "generic_name": "juice_orange",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "orange juice",
+      "OJ"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Rich in vitamin C; high citric acid can trigger heartburn. Increases iron absorption."
+  },
+  {
+    "generic_name": "juice_apple",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "apple juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fructose-rich juice; can cause osmotic diarrhea in high amounts."
+  },
+  {
+    "generic_name": "juice_grapefruit",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "grapefruit juice"
+    ],
+    "interaction_profile": "CYP3A4_inhibitor",
+    "gastric_impact": "acidic",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "Highly potent CYP3A4 inhibitor; do not take with drugs."
+  },
+  {
+    "generic_name": "juice_cranberry",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "cranberry juice drink"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Tart, acidic drink; helps prevent bacterial adhesion in bladder."
+  },
+  {
+    "generic_name": "juice_lemon",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "fresh lemon juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Concentrated citric acid; highly acidic to stomach lining."
+  },
+  {
+    "generic_name": "soda_cola",
+    "category": "food",
+    "food_group": "beverage_caffeinated",
+    "common_aliases": [
+      "coke",
+      "pepsi"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Contains phosphoric acid and caffeine; highly acidic, erodes tooth enamel, irritates stomach."
+  },
+  {
+    "generic_name": "soda_lemon_lime",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "sprite",
+      "7up"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Carbonated acidic beverage; can cause gas bloating."
+  },
+  {
+    "generic_name": "energy_drink",
+    "category": "food",
+    "food_group": "beverage_caffeinated",
+    "common_aliases": [
+      "red bull",
+      "monster"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Extremely high caffeine and taurine; causes cardiac stimulation and gastric irritation."
+  },
+  {
+    "generic_name": "milk_soy",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "soy milk"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Plant milk; contains phytoestrogens. Usually low in calcium unless fortified."
+  },
+  {
+    "generic_name": "milk_almond",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "unsweetened almond milk"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Low calorie plant milk; contains oxalates. Check if calcium-fortified."
+  },
+  {
+    "generic_name": "milk_oat",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "oat milk"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Creamy plant milk; contains beta-glucans, easy on the stomach."
+  },
+  {
+    "generic_name": "milk_coconut",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "coconut milk carton"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Contains medium chain fats; enhances fat-soluble absorption."
+  },
+  {
+    "generic_name": "water_tap",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "water",
+      "drinking water"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Neutral hydration; essential for drug dissolution. Standard reference vehicle."
+  },
+  {
+    "generic_name": "water_mineral",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "sparkling water",
+      "sanzani"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Carbonated water; can cause bloating. Contains trace minerals."
+  },
+  {
+    "generic_name": "kombucha",
+    "category": "food",
+    "food_group": "beverage_alcoholic",
+    "common_aliases": [
+      "fermented tea"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Fermented tea; acidic, contains live probiotics and trace alcohol/caffeine."
+  },
+  {
+    "generic_name": "kefir_liquid",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "kefir drink"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "soothing",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Cultured dairy drink; rich in probiotics. Calcium inhibits drugs."
+  },
+  {
+    "generic_name": "tomato_juice",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "tomato juice"
+    ],
+    "interaction_profile": "acidic",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Salty, highly acidic nightshade beverage; GERD trigger."
+  },
+  {
+    "generic_name": "carrot_juice",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "carrot juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Concentrated beta-carotene beverage; supports skin and eye health."
+  },
+  {
+    "generic_name": "turmeric_powder",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "ground turmeric"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains curcumin; anti-inflammatory spice."
+  },
+  {
+    "generic_name": "ginger_powder",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "ground ginger"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Concentrated ginger spice; helps relieve indigestion."
+  },
+  {
+    "generic_name": "cinnamon_cassia",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "cassia cinnamon"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains coumarin; high doses toxic to liver. Supports insulin sensitivity."
+  },
+  {
+    "generic_name": "cinnamon_ceylon",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "true cinnamon"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "True cinnamon; very low coumarin levels, safe for high dose use."
+  },
+  {
+    "generic_name": "black_pepper",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "peppercorns",
+      "piperine"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Contains piperine, which inhibits liver glucuronidation, dramatically boosting absorption of curcumin, etc. Irritates gut in excess."
+  },
+  {
+    "generic_name": "garlic_powder",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "garlic powder"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Concentrated dry garlic; can cause mild reflux in sensitive stomachs."
+  },
+  {
+    "generic_name": "onion_powder",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "onion powder"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Concentrated dry onion; high in FODMAPs, gas-producing."
+  },
+  {
+    "generic_name": "cayenne_powder",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "cayenne pepper"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Hot chili powder; capsaicin irritates gut lining."
+  },
+  {
+    "generic_name": "oregano_dry",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "oregano"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in carvacrol; antioxidant and antimicrobial herb."
+  },
+  {
+    "generic_name": "basil_fresh",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "sweet basil"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Aromatic herb; contains eugenol, supports digestion."
+  },
+  {
+    "generic_name": "rosemary",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "rosemary leaves"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains rosmarinic acid; antioxidant and antimicrobial."
+  },
+  {
+    "generic_name": "thime",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "thyme leaves"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains thymol; antimicrobial and spasmolytic."
+  },
+  {
+    "generic_name": "parsley",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "flat leaf parsley"
+    ],
+    "interaction_profile": "vitamin_K_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in vitamin K1 (blood clotting support) and apiol."
+  },
+  {
+    "generic_name": "cilantro",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "coriander leaves"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Heavy metal chelating properties; supports liver."
+  },
+  {
+    "generic_name": "coriander_seed",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "ground coriander"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Warm spice; supports carminative digestion."
+  },
+  {
+    "generic_name": "cumin_seed",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "ground cumin"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Supports pancreatic enzyme secretion, aiding digestion."
+  },
+  {
+    "generic_name": "cardamom",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "cardamom pods"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Carminative spice; sweet flavor, highly soothing to stomach."
+  },
+  {
+    "generic_name": "cloves",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "ground cloves"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Highest antioxidant spice; rich in eugenol (numbing agent)."
+  },
+  {
+    "generic_name": "nutmeg",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "ground nutmeg"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains myristicin; toxic in large quantities (hallucinogenic/irritant)."
+  },
+  {
+    "generic_name": "mace",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "ground mace"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Outer shell of nutmeg; similar chemical profile."
+  },
+  {
+    "generic_name": "fennel_seed",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "fennel seeds"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains anethole; chewed post-meals to prevent gas and bloating."
+  },
+  {
+    "generic_name": "dill",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "dill weed"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Traditional carminative herb; calms stomach cramping."
+  },
+  {
+    "generic_name": "mint_peppermint",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "peppermint leaves"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Relaxes digestive tract; menthol source."
+  },
+  {
+    "generic_name": "mint_spearmint",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "spearmint"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Gentler than peppermint; supports digestive comfort."
+  },
+  {
+    "generic_name": "saffron",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "saffron threads"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Precious spice; supports mood and neurotransmitter balance."
+  },
+  {
+    "generic_name": "paprika",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "sweet paprika"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Mild red pepper powder; rich in carotenoids."
+  },
+  {
+    "generic_name": "mustard_seed",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "yellow mustard seed"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Contains sinigrin; stimulates stomach acid but can irritate mucosa."
+  },
+  {
+    "generic_name": "fenugreek_seed",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "fenugreek seeds"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Bitter spice; high in mucilage, supports blood sugar control."
+  },
+  {
+    "generic_name": "star_anise",
+    "category": "food",
+    "food_group": "spice",
+    "common_aliases": [
+      "anise star"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains shikimic acid; carminative digestion support."
+  },
+  {
+    "generic_name": "licorice_root",
+    "category": "food",
+    "food_group": "herb",
+    "common_aliases": [
+      "licorice root"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Contains glycyrrhizin; can raise blood pressure and cause potassium loss. Soothes stomach lining."
+  },
+  {
+    "generic_name": "olive_oil_extra_virgin",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "EVOO",
+      "olive oil"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "soothing",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Monounsaturated fat; rich in oleocanthal (anti-inflammatory) and polyphenol. Excellent absorption vehicle."
+  },
+  {
+    "generic_name": "coconut_oil_virgin",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "coconut oil"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Rich in medium chain fats (lauric acid); directly absorbed, excellent energy source and absorption vehicle."
+  },
+  {
+    "generic_name": "avocado_oil",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "avocado oil"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "High smoke point monounsaturated fat; enhances fat-soluble absorption."
+  },
+  {
+    "generic_name": "butter_clarified",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "ghee"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "soothing",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Lactose/casein free dairy fat; rich in butyrate (colon fuel). Enhances absorption."
+  },
+  {
+    "generic_name": "sesame_oil_refined",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "sesame oil"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Contains sesamin; stable cooking oil."
+  },
+  {
+    "generic_name": "flaxseed_oil_food",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "flax oil"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich in ALA omega-3. Do not heat (highly unstable)."
+  },
+  {
+    "generic_name": "sunflower_oil",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "sunflower seed oil"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High omega-6 seed oil; prone to oxidation when heated."
+  },
+  {
+    "generic_name": "canola_oil",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "rapeseed oil"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Processed seed oil; low saturated fat content."
+  },
+  {
+    "generic_name": "safflower_oil",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "safflower oil"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High omega-6 oil; refined cooking oil."
+  },
+  {
+    "generic_name": "grape_seed_oil_food",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "grape seed oil"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Refined oil; high smoke point, rich in omega-6s."
+  },
+  {
+    "generic_name": "mct_oil_food",
+    "category": "food",
+    "food_group": "oil",
+    "common_aliases": [
+      "medium chain triglycerides"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "100% C8/C10 medium chain fats; rapid absorption vehicle."
+  },
+  {
+    "generic_name": "kimchi",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "kimchi cabbage"
+    ],
+    "interaction_profile": "histamine_source",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Fermented spicy cabbage; contains live probiotics but extremely high in histamines and red pepper (gastric irritant)."
+  },
+  {
+    "generic_name": "sauerkraut",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "sauerkraut juice"
+    ],
+    "interaction_profile": "histamine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fermented cabbage; rich in lactic acid bacteria and vitamin C, but high in histamines (triggers headaches/flushing)."
+  },
+  {
+    "generic_name": "miso_paste",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "miso soup"
+    ],
+    "interaction_profile": "histamine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fermented soybean paste; rich in savory umami, probiotics, and histamines."
+  },
+  {
+    "generic_name": "kefir_dairy",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "dairy kefir"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "soothing",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Fermented milk; rich in probiotics. Calcium inhibits antibiotic absorption."
+  },
+  {
+    "generic_name": "kefir_water",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "tibicos",
+      "water kefir"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Dairy-free fermented sugar-water; rich in probiotics, easy on stomach."
+  },
+  {
+    "generic_name": "tempeh_cooked",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "tempeh"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fermented soy block; high protein, easier to digest than unfermented soy."
+  },
+  {
+    "generic_name": "natto",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "natto beans"
+    ],
+    "interaction_profile": "vitamin_K_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fermented soybeans; richest food source of vitamin K2 (MK-7) and nattokinase. Interacts with warfarin."
+  },
+  {
+    "generic_name": "kombucha_tea",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "kombucha drink"
+    ],
+    "interaction_profile": "histamine_source",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Fermented tea; contains acetic acid, trace alcohol, and histamines. Acidic reflux trigger."
+  },
+  {
+    "generic_name": "yogurt_greek",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "greek yogurt plain"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "soothing",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Strained yogurt; high protein and calcium (inhibits drug absorption)."
+  },
+  {
+    "generic_name": "apple_cider_vinegar",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "ACV",
+      "cider vinegar"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Contains acetic acid; stimulates stomach acid production. Take diluted to prevent enamel damage."
+  },
+  {
+    "generic_name": "pickles_fermented",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "sour pickles"
+    ],
+    "interaction_profile": "histamine_source",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Lacto-fermented cucumbers; rich in probiotics and histamines. Acidic."
+  },
+  {
+    "generic_name": "olives_cured",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "kalamata olives"
+    ],
+    "interaction_profile": "histamine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Cured olives; rich in healthy fats and histamines."
+  },
+  {
+    "generic_name": "cheese_aged_cheddar",
+    "category": "food",
+    "food_group": "fermented",
+    "common_aliases": [
+      "aged cheddar"
+    ],
+    "interaction_profile": "tyramine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Aged cheddar; high tyramine and calcium levels."
+  },
+  {
+    "generic_name": "soy_sauce",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "shoyu",
+      "tamari"
+    ],
+    "interaction_profile": "histamine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fermented wheat/soy sauce; exceptionally high in sodium and histamines."
+  },
+  {
+    "generic_name": "fish_sauce",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "nam pla"
+    ],
+    "interaction_profile": "histamine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Fermented fish liquid; extremely high in sodium, glutamates, and histamines."
+  },
+  {
+    "generic_name": "pizza",
+    "category": "food",
+    "food_group": "processed",
+    "common_aliases": [
+      "pepperoni pizza"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "High fat, refined starch, cheese, tomato sauce. Triple threat trigger for acid reflux and slow gastric emptying."
+  },
+  {
+    "generic_name": "burger",
+    "category": "food",
+    "food_group": "processed",
+    "common_aliases": [
+      "cheeseburger",
+      "hamburger"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High fat and protein; slows digestion, can cause postprandial sleepiness."
+  },
+  {
+    "generic_name": "french_fries",
+    "category": "food",
+    "food_group": "processed",
+    "common_aliases": [
+      "chips",
+      "fries"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Deep fried potato; high lipid content delays gastric emptying, causing bloating and reflux."
+  },
+  {
+    "generic_name": "potato_chips",
+    "category": "food",
+    "food_group": "processed",
+    "common_aliases": [
+      "crisps"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "High sodium, fried snack; triggers thirst."
+  },
+  {
+    "generic_name": "chocolate_dark",
+    "category": "food",
+    "food_group": "processed",
+    "common_aliases": [
+      "cocoa",
+      "cacao"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Contains methylxanthines (relaxes esophageal sphincter, causing reflux) and caffeine. High oxalates."
+  },
+  {
+    "generic_name": "chocolate_milk",
+    "category": "food",
+    "food_group": "processed",
+    "common_aliases": [
+      "chocolate bar"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "irritant",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Contains milk solids (calcium), sugar, and methylxanthines (causes reflux)."
+  },
+  {
+    "generic_name": "candy_gummy",
+    "category": "food",
+    "food_group": "processed",
+    "common_aliases": [
+      "gummies"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Pure sugar and gelatin; fast glucose absorption."
+  },
+  {
+    "generic_name": "sugar_white",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "table sugar",
+      "sucrose"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sucrose; fast carbohydrate absorption, spike insulin."
+  },
+  {
+    "generic_name": "honey_raw",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "honey"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Contains enzymes and trace propolis; soothing to sore throat and stomach."
+  },
+  {
+    "generic_name": "maple_syrup",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "maple"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Concentrated sap sugars; rich in manganese and zinc."
+  },
+  {
+    "generic_name": "stevia_extract",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "stevia"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Zero calorie glycoside sweetener; generally neutral."
+  },
+  {
+    "generic_name": "monk_fruit",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "lo han guo"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Zero calorie mogroside sweetener; antioxidant properties."
+  },
+  {
+    "generic_name": "aspartame",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "equal",
+      "nutrasweet"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Artificial sweetener; breaks down into phenylalanine. Avoid in PKU patients."
+  },
+  {
+    "generic_name": "sucralose",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "splenda"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Chlorinated sugar sweetener; may alter gut microbiome in high doses."
+  },
+  {
+    "generic_name": "erythritol",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "sugar alcohol"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Sugar alcohol; mostly absorbed in small intestine so causes less gas than sorbitol."
+  },
+  {
+    "generic_name": "xylitol",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "birch sugar"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Sugar alcohol; can cause gas and osmotic diarrhea. Highly toxic to dogs."
+  },
+  {
+    "generic_name": "sorbitol",
+    "category": "food",
+    "food_group": "sweetener",
+    "common_aliases": [
+      "sorbitol syrup"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Sugar alcohol; slow absorption causes water draw in colon, laxative effect."
+  },
+  {
+    "generic_name": "ketchup",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "catsup"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Contains vinegar, tomato paste, and sugar; highly acidic reflux trigger."
+  },
+  {
+    "generic_name": "mustard_prepared",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "yellow mustard"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Vinegar and mustard seeds; acidic and mildly irritating to stomach lining."
+  },
+  {
+    "generic_name": "mayonnaise",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "mayo"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Egg and oil emulsion; high fat content enhances fat-soluble absorption."
+  },
+  {
+    "generic_name": "vinegar_balsamic",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "balsamic"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Sweet fermented grape vinegar; acidic reflux trigger."
+  },
+  {
+    "generic_name": "vinegar_white",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "distilled vinegar"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Highly acidic clean vinegar; erodes tooth enamel if undiluted."
+  },
+  {
+    "generic_name": "hot_sauce",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "tabasco",
+      "sriracha"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Vinegar and capsaicin; causes direct irritation of gastric mucosa and heartburn."
+  },
+  {
+    "generic_name": "soy_sauce_tamari",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "gluten free soy sauce"
+    ],
+    "interaction_profile": "histamine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Gluten-free fermented soy sauce; rich in histamines."
+  },
+  {
+    "generic_name": "peanut_sauce",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "satay sauce"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich peanut paste; high fat and protein content."
+  },
+  {
+    "generic_name": "pear_peeled",
+    "category": "food",
+    "food_group": "pome_fruit",
+    "common_aliases": [
+      "peeled pear"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Peeled pear; minimal fiber, very easy to digest, hypoallergenic."
+  },
+  {
+    "generic_name": "pear_nashi",
+    "category": "food",
+    "food_group": "pome_fruit",
+    "common_aliases": [
+      "nashi pear"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Crisp Asian pear with high water content."
+  },
+  {
+    "generic_name": "apple_peeled",
+    "category": "food",
+    "food_group": "pome_fruit",
+    "common_aliases": [
+      "peeled apple"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Peeled apple; lower insoluble fiber, gentle on stomach."
+  },
+  {
+    "generic_name": "apple_sauce",
+    "category": "food",
+    "food_group": "pome_fruit",
+    "common_aliases": [
+      "applesauce"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Cooked puréed apples; extremely easy to digest, binding pectin."
+  },
+  {
+    "generic_name": "nectarine_white",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "white nectarine"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sweet white nectarine variety."
+  },
+  {
+    "generic_name": "plum_red",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "red plum"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Red skinned sweet plum."
+  },
+  {
+    "generic_name": "plum_yellow",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "yellow plum"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sweet yellow plum variety."
+  },
+  {
+    "generic_name": "cherry_black",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "black cherry"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sweet dark black cherry."
+  },
+  {
+    "generic_name": "grape_concord",
+    "category": "food",
+    "food_group": "stone_fruit",
+    "common_aliases": [
+      "concord grape"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich purple grape variety used for juice."
+  },
+  {
+    "generic_name": "coconut_cream",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "coconut cream canned"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Thick fat layer from coconut milk; excellent absorption vehicle."
+  },
+  {
+    "generic_name": "coconut_shreds_unsweetened",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "shredded coconut unsweetened"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Dried coconut fiber flakes."
+  },
+  {
+    "generic_name": "tangerine_juice",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "tangerine juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Sweet citrus juice; rich in vitamin C."
+  },
+  {
+    "generic_name": "limeade",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "limeade drink"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Sweetened lime juice beverage; acidic."
+  },
+  {
+    "generic_name": "lemonade",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "lemonade drink"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "acidic",
+    "absorption_effect": "none",
+    "notes": "Sweetened lemon juice beverage; acidic reflux trigger."
+  },
+  {
+    "generic_name": "tea_white",
+    "category": "food",
+    "food_group": "beverage_caffeinated",
+    "common_aliases": [
+      "white tea leaves"
+    ],
+    "interaction_profile": "iron_inhibitor",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Least processed tea; rich in antioxidants, contains tannins and caffeine."
+  },
+  {
+    "generic_name": "tea_oolong",
+    "category": "food",
+    "food_group": "beverage_caffeinated",
+    "common_aliases": [
+      "oolong tea"
+    ],
+    "interaction_profile": "iron_inhibitor",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Partially oxidized tea; contains tannins and caffeine."
+  },
+  {
+    "generic_name": "tea_rooibos",
+    "category": "food",
+    "food_group": "beverage_herbal",
+    "common_aliases": [
+      "rooibos",
+      "red bush tea"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Caffeine-free herbal tea; low in tannins, does not inhibit iron absorption."
+  },
+  {
+    "generic_name": "tea_yerba_mate",
+    "category": "food",
+    "food_group": "beverage_caffeinated",
+    "common_aliases": [
+      "mate",
+      "yerba mate"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "irritant",
+    "absorption_effect": "none",
+    "notes": "Traditional South American caffeinated tea; high caffeine content."
+  },
+  {
+    "generic_name": "tea_ginger_lemon",
+    "category": "food",
+    "food_group": "beverage_herbal",
+    "common_aliases": [
+      "ginger lemon tea"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Warm herbal tea; ginger helps digestion, lemon adds mild acid."
+  },
+  {
+    "generic_name": "water_seltzer",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "seltzer water"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Carbonated pure water; refreshing, can cause gas bubbles."
+  },
+  {
+    "generic_name": "juice_prune",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "prune juice"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Rich laxative beverage containing sorbitol and fiber."
+  },
+  {
+    "generic_name": "juice_pomegranate",
+    "category": "food",
+    "food_group": "beverage_juice",
+    "common_aliases": [
+      "pomegranate juice"
+    ],
+    "interaction_profile": "CYP3A4_inhibitor",
+    "gastric_impact": "acidic",
+    "absorption_effect": "inhibits_metabolism",
+    "notes": "Pomegranate juice; mild CYP3A4 inhibition capacity."
+  },
+  {
+    "generic_name": "spaghetti_squash",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "spaghetti squash strings"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Fibrous squash that shreds like spaghetti; easy to digest."
+  },
+  {
+    "generic_name": "acorn_squash",
+    "category": "food",
+    "food_group": "nightshade",
+    "common_aliases": [
+      "acorn squash"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Sweet winter squash; rich in potassium and fiber."
+  },
+  {
+    "generic_name": "potato_sweet_purple",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "purple sweet potato"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Rich in anthocyanin pigments and soothing starch."
+  },
+  {
+    "generic_name": "potato_fingerling",
+    "category": "food",
+    "food_group": "root_vegetable",
+    "common_aliases": [
+      "fingerling potato"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Small waxy potato variety."
+  },
+  {
+    "generic_name": "onion_shallots",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "chopped shallots"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "gas_producing",
+    "absorption_effect": "none",
+    "notes": "Mild sweet allium; prebiotic source."
+  },
+  {
+    "generic_name": "garlic_roasted",
+    "category": "food",
+    "food_group": "allium",
+    "common_aliases": [
+      "roasted garlic cloves"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Roasting reduces allicin and harshness, making it much gentler on the stomach."
+  },
+  {
+    "generic_name": "cabbage_bok_choy_baby",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "steamed baby bok choy"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Baby bok choy; tender fibers, easier to digest."
+  },
+  {
+    "generic_name": "cabbage_napa_steamed",
+    "category": "food",
+    "food_group": "cruciferous",
+    "common_aliases": [
+      "steamed napa cabbage"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Steamed napa cabbage; soft, gentle digestive tract support."
+  },
+  {
+    "generic_name": "pea_shoots",
+    "category": "food",
+    "food_group": "sprouts",
+    "common_aliases": [
+      "pea shoots greens"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Tender green shoots of pea plants."
+  },
+  {
+    "generic_name": "mushroom_porcini",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "porcini mushrooms"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Rich wild mushroom with intense umami flavor."
+  },
+  {
+    "generic_name": "mushroom_chanterelle",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "chanterelles"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Golden wild mushroom; rich in vitamin D."
+  },
+  {
+    "generic_name": "mushroom_enoki",
+    "category": "food",
+    "food_group": "fungi",
+    "common_aliases": [
+      "enoki mushrooms"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Thin white mushrooms; high in fiber and beta-glucans."
+  },
+  {
+    "generic_name": "beef_bone_broth",
+    "category": "food",
+    "food_group": "proteins",
+    "common_aliases": [
+      "bone broth",
+      "beef broth"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Rich in gelatin, collagen, and amino acids; highly soothing and healing for gut mucosa."
+  },
+  {
+    "generic_name": "chicken_bone_broth",
+    "category": "food",
+    "food_group": "proteins",
+    "common_aliases": [
+      "chicken broth"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Warm broth containing collagen; excellent for gut healing and easy digestion."
+  },
+  {
+    "generic_name": "turkey_ground",
+    "category": "food",
+    "food_group": "proteins",
+    "common_aliases": [
+      "lean ground turkey"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Lean ground poultry meat; easy to digest."
+  },
+  {
+    "generic_name": "egg_scrambled",
+    "category": "food",
+    "food_group": "proteins",
+    "common_aliases": [
+      "scrambled eggs"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Soft cooked scrambled eggs; very easy on a recovering stomach."
+  },
+  {
+    "generic_name": "egg_poached",
+    "category": "food",
+    "food_group": "proteins",
+    "common_aliases": [
+      "poached egg"
+    ],
+    "interaction_profile": "protein_rich",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Soft poached egg; highly bioavailable nutrition, easy to digest."
+  },
+  {
+    "generic_name": "cheese_goat_hard",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "aged goat cheese"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Hard goat cheese; aged, containing calcium."
+  },
+  {
+    "generic_name": "cheese_pecorino_romano",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "pecorino"
+    ],
+    "interaction_profile": "tyramine_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Aged sheep cheese; high in tyramine and calcium. Avoid with MAOIs."
+  },
+  {
+    "generic_name": "almond_milk_sweetened",
+    "category": "food",
+    "food_group": "dairy",
+    "common_aliases": [
+      "sweetened almond milk"
+    ],
+    "interaction_profile": "oxalate_rich",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Almond milk with added cane sugar."
+  },
+  {
+    "generic_name": "macadamia_butter",
+    "category": "food",
+    "food_group": "nut",
+    "common_aliases": [
+      "macadamia nut butter"
+    ],
+    "interaction_profile": "fat_soluble_vehicle",
+    "gastric_impact": "neutral",
+    "absorption_effect": "enhances_absorption",
+    "notes": "Rich macadamia spread; excellent vehicle for fat-soluble vitamins."
+  },
+  {
+    "generic_name": "pumpkin_seed_butter",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "pepita butter"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Nut-free seed spread rich in magnesium and zinc."
+  },
+  {
+    "generic_name": "sesame_seeds_black",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "black sesame seeds"
+    ],
+    "interaction_profile": "calcium_source",
+    "gastric_impact": "neutral",
+    "absorption_effect": "inhibits_absorption",
+    "notes": "Rich in calcium and iron; common in Asian cooking."
+  },
+  {
+    "generic_name": "chia_seed_white",
+    "category": "food",
+    "food_group": "seed",
+    "common_aliases": [
+      "white chia seeds"
+    ],
+    "interaction_profile": "fiber_rich",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "White variety of chia seeds; forms gel."
+  },
+  {
+    "generic_name": "oatmeal_instant",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "instant oats"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "soothing",
+    "absorption_effect": "none",
+    "notes": "Pre-cooked oats; faster digestion than steel cut."
+  },
+  {
+    "generic_name": "rice_bran",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "rice bran fiber"
+    ],
+    "interaction_profile": "phytate_rich",
+    "gastric_impact": "high_fiber",
+    "absorption_effect": "none",
+    "notes": "Outer shell of rice; high in phytates and insoluble fiber."
+  },
+  {
+    "generic_name": "quinoa_flour",
+    "category": "food",
+    "food_group": "whole_grain",
+    "common_aliases": [
+      "quinoa flour"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Gluten-free flour made from ground quinoa."
+  },
+  {
+    "generic_name": "salt_sea",
+    "category": "food",
+    "food_group": "condiment",
+    "common_aliases": [
+      "sea salt",
+      "sodium"
+    ],
+    "interaction_profile": "none",
+    "gastric_impact": "neutral",
+    "absorption_effect": "none",
+    "notes": "Sodium chloride; essential electrolyte. Excess raises blood pressure."
+  }
+]

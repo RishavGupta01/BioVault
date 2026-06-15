@@ -1,0 +1,575 @@
+{
+  "vitamin_d3": {
+    "calcium_carbonate": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin D enhances calcium absorption in the intestine by upregulating calcium-binding proteins.",
+      "benefit": "Up to 65% better calcium utilization and bone mineralization.",
+      "optimal_timing": "Take together with a meal containing fat.",
+      "score_bonus": 5
+    },
+    "calcium_citrate": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin D promotes active calcium transport across intestinal epithelium.",
+      "benefit": "Enhanced calcium absorption and bone density maintenance.",
+      "optimal_timing": "Take together; vitamin D is fat-soluble so take with food.",
+      "score_bonus": 5
+    },
+    "magnesium_glycinate": {
+      "type": "SYNERGY",
+      "mechanism": "Magnesium is required for vitamin D activation in the liver and kidneys.",
+      "benefit": "Optimal vitamin D metabolism and utilization.",
+      "optimal_timing": "Take together or within same meal.",
+      "score_bonus": 4
+    },
+    "vitamin_k2": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin K2 directs calcium mobilized by D3 into bones rather than arteries.",
+      "benefit": "Prevents arterial calcification while maximizing bone benefit.",
+      "optimal_timing": "Take together with a fat-containing meal.",
+      "score_bonus": 6
+    }
+  },
+  "vitamin_c": {
+    "iron_sulfate": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Ascorbic acid reduces Fe3+ to Fe2+, the form absorbed by DMT1 transporters.",
+      "benefit": "Iron absorption increased by 2-3x.",
+      "optimal_timing": "Take 200mg vitamin C with iron supplement.",
+      "score_bonus": 5
+    },
+    "ferrous_sulfate": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Vitamin C chelates iron in a soluble form, preventing inhibition by phytates/tannins.",
+      "benefit": "Significantly improved iron bioavailability.",
+      "optimal_timing": "Take simultaneously.",
+      "score_bonus": 5
+    },
+    "vitamin_e": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin C regenerates oxidized vitamin E (tocopheroxyl radical back to tocopherol).",
+      "benefit": "Extended antioxidant protection cycle.",
+      "optimal_timing": "Can be taken together.",
+      "score_bonus": 3
+    },
+    "collagen": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Vitamin C is essential cofactor for prolyl and lysyl hydroxylases in collagen synthesis.",
+      "benefit": "Proper collagen cross-linking and tissue repair.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    },
+    "zinc": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin C and zinc have complementary immune-modulating effects.",
+      "benefit": "Enhanced immune response during infections.",
+      "optimal_timing": "Take together during illness.",
+      "score_bonus": 3
+    }
+  },
+  "probiotics": {
+    "prebiotics": {
+      "type": "SYNERGY",
+      "mechanism": "Prebiotics (FOS, inulin) serve as substrate for probiotic bacteria, enhancing colonization.",
+      "benefit": "3-5x improved probiotic survival and colony formation.",
+      "optimal_timing": "Take prebiotic fiber with or just before probiotics.",
+      "score_bonus": 5
+    },
+    "vitamin_d3": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin D modulates gut immune response, creating favorable environment for probiotics.",
+      "benefit": "Enhanced probiotic colonization and gut barrier function.",
+      "optimal_timing": "Take in the same general time frame.",
+      "score_bonus": 3
+    }
+  },
+  "omega_3": {
+    "vitamin_d3": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Omega-3 fatty acids enhance vitamin D absorption as D3 is fat-soluble.",
+      "benefit": "Improved vitamin D bioavailability.",
+      "optimal_timing": "Take together with a meal.",
+      "score_bonus": 4
+    },
+    "vitamin_e": {
+      "type": "PROTECTIVE",
+      "mechanism": "Vitamin E protects omega-3 fatty acids from lipid peroxidation.",
+      "benefit": "Prevents oxidative degradation of EPA/DHA.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 3
+    },
+    "curcumin": {
+      "type": "SYNERGY",
+      "mechanism": "Both have complementary anti-inflammatory pathways (COX/LOX and NF-κB).",
+      "benefit": "Enhanced anti-inflammatory effect.",
+      "optimal_timing": "Take together with a fat-containing meal.",
+      "score_bonus": 4
+    },
+    "coq10": {
+      "type": "SYNERGY",
+      "mechanism": "CoQ10 and omega-3s both support cardiovascular mitochondrial function.",
+      "benefit": "Complementary cardioprotective effects.",
+      "optimal_timing": "Take together with food.",
+      "score_bonus": 3
+    }
+  },
+  "curcumin": {
+    "black_pepper": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Piperine in black pepper inhibits glucuronidation of curcumin in the gut and liver.",
+      "benefit": "Curcumin bioavailability increased by 2000%.",
+      "optimal_timing": "Always take curcumin with piperine/black pepper extract.",
+      "score_bonus": 7
+    },
+    "quercetin": {
+      "type": "SYNERGY",
+      "mechanism": "Quercetin and curcumin have complementary anti-inflammatory and antioxidant pathways.",
+      "benefit": "Enhanced anti-inflammatory response.",
+      "optimal_timing": "Take together with a meal.",
+      "score_bonus": 3
+    }
+  },
+  "magnesium_glycinate": {
+    "vitamin_b6": {
+      "type": "SYNERGY",
+      "mechanism": "B6 (pyridoxine) enhances intracellular magnesium accumulation and retention.",
+      "benefit": "Improved magnesium utilization and reduced urinary losses.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    },
+    "zinc": {
+      "type": "SYNERGY",
+      "mechanism": "Magnesium and zinc have complementary roles in enzymatic reactions and immune function.",
+      "benefit": "Both support 300+ enzymatic processes.",
+      "optimal_timing": "Can take together, but separate from calcium.",
+      "score_bonus": 3
+    },
+    "taurine": {
+      "type": "SYNERGY",
+      "mechanism": "Taurine enhances magnesium transport into cells.",
+      "benefit": "Improved intracellular magnesium levels.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 3
+    }
+  },
+  "vitamin_b12": {
+    "folate": {
+      "type": "SYNERGY",
+      "mechanism": "B12 and folate work together in one-carbon metabolism and homocysteine remethylation.",
+      "benefit": "Proper DNA synthesis and homocysteine regulation.",
+      "optimal_timing": "Take together; deficiency in one can mask the other.",
+      "score_bonus": 5
+    },
+    "vitamin_b6": {
+      "type": "SYNERGY",
+      "mechanism": "B6, B12, and folate form the homocysteine metabolism triad.",
+      "benefit": "Optimal cardiovascular risk reduction via homocysteine lowering.",
+      "optimal_timing": "Take all B vitamins together.",
+      "score_bonus": 4
+    },
+    "iron_sulfate": {
+      "type": "SYNERGY",
+      "mechanism": "B12 is required for red blood cell maturation alongside iron.",
+      "benefit": "Prevention of combined-cause anemia.",
+      "optimal_timing": "Can be taken in same time window.",
+      "score_bonus": 3
+    }
+  },
+  "coq10": {
+    "statins": {
+      "type": "PROTECTIVE",
+      "mechanism": "Statins inhibit CoQ10 synthesis via HMG-CoA reductase pathway; supplementation replaces depleted CoQ10.",
+      "benefit": "Reduces statin-induced myalgia and fatigue.",
+      "optimal_timing": "Take CoQ10 with statin dose.",
+      "score_bonus": 5
+    },
+    "vitamin_e": {
+      "type": "SYNERGY",
+      "mechanism": "CoQ10 and vitamin E are both lipid-soluble antioxidants protecting cell membranes.",
+      "benefit": "Synergistic membrane protection.",
+      "optimal_timing": "Take together with food.",
+      "score_bonus": 3
+    },
+    "alpha_lipoic_acid": {
+      "type": "SYNERGY",
+      "mechanism": "ALA recycles CoQ10 and enhances mitochondrial electron transport.",
+      "benefit": "Enhanced cellular energy production.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    }
+  },
+  "zinc": {
+    "quercetin": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Quercetin acts as a zinc ionophore, facilitating zinc transport into cells.",
+      "benefit": "Enhanced intracellular zinc levels for immune function.",
+      "optimal_timing": "Take together during illness.",
+      "score_bonus": 4
+    },
+    "vitamin_a": {
+      "type": "SYNERGY",
+      "mechanism": "Zinc is required for retinol-binding protein synthesis and vitamin A transport.",
+      "benefit": "Proper vitamin A metabolism and immune function.",
+      "optimal_timing": "Take together with a meal.",
+      "score_bonus": 3
+    }
+  },
+  "selenium": {
+    "vitamin_e": {
+      "type": "SYNERGY",
+      "mechanism": "Selenium (in glutathione peroxidase) and vitamin E have complementary antioxidant mechanisms.",
+      "benefit": "Enhanced protection against lipid peroxidation.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    },
+    "iodine": {
+      "type": "SYNERGY",
+      "mechanism": "Selenium is required for thyroid hormone conversion (T4→T3) via deiodinase enzymes.",
+      "benefit": "Optimal thyroid function when both are adequate.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    }
+  },
+  "n_acetyl_cysteine": {
+    "vitamin_c": {
+      "type": "SYNERGY",
+      "mechanism": "NAC regenerates glutathione; vitamin C spares glutathione from oxidative depletion.",
+      "benefit": "Enhanced antioxidant defense system.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    },
+    "selenium": {
+      "type": "SYNERGY",
+      "mechanism": "Selenium is a cofactor for glutathione peroxidase; NAC provides the cysteine substrate for glutathione.",
+      "benefit": "Maximized glutathione antioxidant system.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    }
+  },
+  "berberine": {
+    "alpha_lipoic_acid": {
+      "type": "SYNERGY",
+      "mechanism": "Both activate AMPK pathway through different mechanisms.",
+      "benefit": "Enhanced glucose metabolism and insulin sensitivity.",
+      "optimal_timing": "Take together before meals.",
+      "score_bonus": 4
+    },
+    "milk_thistle": {
+      "type": "SYNERGY",
+      "mechanism": "Milk thistle (silymarin) may enhance berberine bioavailability and both support liver function.",
+      "benefit": "Improved berberine absorption and hepatoprotective effects.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 3
+    }
+  },
+  "green_tea_extract_egcg": {
+    "vitamin_c_ascorbic_acid": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Vitamin C acts as an antioxidant stabilizer, reducing EGCG oxidation in the intestine and increasing absorption by 3-fold.",
+      "benefit": "Enhanced antioxidant benefits and higher catechin bioavailability.",
+      "optimal_timing": "Take together with water.",
+      "score_bonus": 4
+    },
+    "black_pepper": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Piperine increases absorption of EGCG by inhibiting efflux pumps.",
+      "benefit": "Improved metabolic and cognitive support.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    },
+    "zinc_picolinate": {
+      "type": "SYNERGY",
+      "mechanism": "EGCG acts as a natural zinc ionophore, enhancing zinc's intracellular concentration.",
+      "benefit": "Synergistic immune and antioxidant protection.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    }
+  },
+  "ashwagandha_ksm66": {
+    "l_theanine": {
+      "type": "SYNERGY",
+      "mechanism": "Complementary pathways; ashwagandha reduces cortisol while L-theanine stimulates alpha brain waves and increases GABA.",
+      "benefit": "Enhanced anxiety reduction, stress coping, and calm focus.",
+      "optimal_timing": "Take together in the morning or during high stress.",
+      "score_bonus": 5
+    },
+    "rhodiola_rosea": {
+      "type": "SYNERGY",
+      "mechanism": "Complementary adaptogens targeting the HPA axis to regulate cortisol and support neurotransmitter balance.",
+      "benefit": "Enhanced physical endurance, mental stamina, and stress resistance.",
+      "optimal_timing": "Take together in the morning.",
+      "score_bonus": 5
+    }
+  },
+  "melatonin_fast_release": {
+    "l_theanine": {
+      "type": "SYNERGY",
+      "mechanism": "Melatonin initiates sleep onset while L-theanine relaxes the mind by increasing GABA, preventing nocturnal waking.",
+      "benefit": "Improved sleep quality and faster sleep onset.",
+      "optimal_timing": "Take 30-60 minutes before bed.",
+      "score_bonus": 4
+    }
+  },
+  "creatine_monohydrate": {
+    "sugar_white": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Carbohydrates stimulate insulin release, which upregulates sodium-dependent creatine transporters, boosting muscle uptake.",
+      "benefit": "Up to 60% higher creatine muscle deposition.",
+      "optimal_timing": "Take creatine with a high-glycemic carbohydrate source.",
+      "score_bonus": 4
+    }
+  },
+  "glucosamine_sulfate": {
+    "chondroitin_sulfate": {
+      "type": "SYNERGY",
+      "mechanism": "Complementary action; glucosamine stimulates glycosaminoglycan synthesis while chondroitin inhibits degradative enzymes.",
+      "benefit": "Synergistic preservation of joint cartilage and pain relief.",
+      "optimal_timing": "Take together with meals.",
+      "score_bonus": 5
+    },
+    "msm_methylsulfonylmethane": {
+      "type": "SYNERGY",
+      "mechanism": "Glucosamine repairs structure while MSM provides organic sulfur required for collagen cross-linking and reduces inflammation.",
+      "benefit": "Faster reduction in joint pain and stiffness.",
+      "optimal_timing": "Take together with food.",
+      "score_bonus": 4
+    }
+  },
+  "calcium_carbonate": {
+    "magnesium_glycinate": {
+      "type": "SYNERGY",
+      "mechanism": "Magnesium supports parathyroid hormone secretion, which regulates active calcium transport.",
+      "benefit": "Balanced mineral density and muscle relaxation.",
+      "optimal_timing": "Take together or within the same meal (maintain 2:1 ratio).",
+      "score_bonus": 3
+    }
+  },
+  "vitamin_d3_cholecalciferol": {
+    "vitamin_a_retinyl_palmitate": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin A and D work in tandem to transcribe genes for calcium-binding proteins, supporting bone health.",
+      "benefit": "Optimal bone mineralization and immune modulation.",
+      "optimal_timing": "Take together with a fat-containing meal.",
+      "score_bonus": 4
+    },
+    "vitamin_k2_mk7": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin D3 stimulates the synthesis of osteocalcin, while Vitamin K2 is required to carboxilate and activate it, directing calcium to bones and preventing arterial calcification.",
+      "benefit": "Synergistic bone mineralization and cardiovascular safety.",
+      "optimal_timing": "Take together with a meal containing fats.",
+      "score_bonus": 6
+    }
+  },
+  "turmeric_curcumin_piperine": {
+    "ginger_root_extract": {
+      "type": "SYNERGY",
+      "mechanism": "Combined inhibition of inflammatory pathways (COX, LOX, and NF-kB pathways).",
+      "benefit": "Enhanced natural pain relief and anti-inflammatory action.",
+      "optimal_timing": "Take together with a meal.",
+      "score_bonus": 5
+    }
+  },
+  "iron_bisglycinate": {
+    "copper_gluconate": {
+      "type": "SYNERGY",
+      "mechanism": "Copper is an essential component of ceruloplasmin, which converts iron from Fe2+ to Fe3+ for binding to transferrin.",
+      "benefit": "Proper mobilization of iron stores and prevention of anemia.",
+      "optimal_timing": "Take within the same day.",
+      "score_bonus": 3
+    },
+    "vitamin_a_retinyl_palmitate": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin A helps mobilize iron from liver stores for hemoglobin synthesis, helping prevent anemia.",
+      "benefit": "Improved iron mobilization and hemoglobin production.",
+      "optimal_timing": "Take within the same day.",
+      "score_bonus": 4
+    }
+  },
+  "zinc_picolinate": {
+    "copper_gluconate": {
+      "type": "PROTECTIVE",
+      "mechanism": "High-dose zinc inhibits copper absorption; supplying copper prevents zinc-induced copper deficiency anemia.",
+      "benefit": "Balanced trace mineral levels during immune supplementation.",
+      "optimal_timing": "Separate doses by 2 hours if zinc > 25mg, otherwise take together.",
+      "score_bonus": 3
+    },
+    "vitamin_a_retinyl_palmitate": {
+      "type": "SYNERGY",
+      "mechanism": "Zinc is required for enzyme synthesis that converts retinol to retinaldehyde and transports Vitamin A in the blood.",
+      "benefit": "Synergistic support for vision and immune health.",
+      "optimal_timing": "Take together with food.",
+      "score_bonus": 4
+    }
+  },
+  "potassium_citrate": {
+    "magnesium_glycinate": {
+      "type": "SYNERGY",
+      "mechanism": "Magnesium is a cofactor for Na+/K+-ATPase, which pump potassium into cells, preventing intracellular potassium depletion.",
+      "benefit": "Optimal cardiovascular and muscle electrolyte balance.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    }
+  },
+  "cranberry_extract": {
+    "probiotic_lactobacillus_acidophilus": {
+      "type": "SYNERGY",
+      "mechanism": "Cranberry PACs prevent pathogen adhesion in the urinary tract while probiotics restore healthy genitourinary flora.",
+      "benefit": "Synergistic prevention of recurrent UTIs.",
+      "optimal_timing": "Take daily; separate from antibiotics.",
+      "score_bonus": 4
+    }
+  },
+  "milk_thistle_silymarin": {
+    "dandelion_root": {
+      "type": "SYNERGY",
+      "mechanism": "Milk thistle protects liver cells from toxins while dandelion root promotes bile secretion and gallbladder emptying.",
+      "benefit": "Enhanced hepatic detoxification and digestion of fats.",
+      "optimal_timing": "Take together before meals.",
+      "score_bonus": 3
+    }
+  },
+  "coenzyme_q10_ubiquinol": {
+    "astaxanthin": {
+      "type": "SYNERGY",
+      "mechanism": "Combined lipid-soluble antioxidants; CoQ10 supports mitochondrial ATP while astaxanthin protects mitochondrial membranes.",
+      "benefit": "Potent cellular energy and cardiovascular protection.",
+      "optimal_timing": "Take with a fat-containing meal.",
+      "score_bonus": 4
+    },
+    "black_pepper": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Piperine enhances the thermogenic and permeability characteristics of intestinal cells, boosting CoQ10 absorption.",
+      "benefit": "Increased cellular bioavailability of CoQ10.",
+      "optimal_timing": "Take together with a fat-containing meal.",
+      "score_bonus": 4
+    }
+  },
+  "vitamin_c_ascorbic_acid": {
+    "selenium_selenomethionine": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin C and selenium act cooperatively to regenerate reduced glutathione, enhancing antioxidant defense.",
+      "benefit": "Maximized cellular antioxidant status.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 3
+    },
+    "iron_sulfate": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Vitamin C reduces dietary ferric iron (Fe3+) to ferrous iron (Fe2+), which is more soluble and easily absorbed in the duodenum.",
+      "benefit": "Iron absorption increased up to 3-fold.",
+      "optimal_timing": "Take simultaneously.",
+      "score_bonus": 5
+    }
+  },
+  "resveratrol": {
+    "black_pepper": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Piperine inhibits glucuronidation of resveratrol in the intestine, increasing its bioavailability.",
+      "benefit": "Improved cardiovascular and anti-aging benefits.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    }
+  },
+  "cbd_oil": {
+    "black_pepper": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Piperine enhances cannabinoid uptake and acts synergistically on TRPV1 receptors.",
+      "benefit": "Enhanced analgesic and calming effects.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 3
+    }
+  },
+  "ginkgo_biloba": {
+    "gotu_kola": {
+      "type": "SYNERGY",
+      "mechanism": "Ginkgo increases cerebral blood flow while Gotu Kola stimulates dendritic branching and cognitive memory.",
+      "benefit": "Synergistic support for memory, focus, and circulation.",
+      "optimal_timing": "Take together in the morning.",
+      "score_bonus": 4
+    }
+  },
+  "probiotic_lactobacillus_rhamnosus": {
+    "inulin_fiber": {
+      "type": "SYNERGY",
+      "mechanism": "Inulin fiber selectively feeds L. rhamnosus, accelerating colony growth and gut barrier reinforcement.",
+      "benefit": "Enhanced probiotic colonization.",
+      "optimal_timing": "Take together with water.",
+      "score_bonus": 5
+    }
+  },
+  "vitamin_b12_methylcobalamin": {
+    "vitamin_b9_methylfolate": {
+      "type": "SYNERGY",
+      "mechanism": "Methylcobalamin and methylfolate are cofactors in the methionine synthase reaction, reducing homocysteine levels.",
+      "benefit": "Synergistic cardiovascular and neurological support.",
+      "optimal_timing": "Take together in the morning.",
+      "score_bonus": 5
+    }
+  },
+  "omega_3_fish_oil": {
+    "vitamin_e_d_alpha_tocopherol": {
+      "type": "PROTECTIVE",
+      "mechanism": "Vitamin E is a lipid-soluble antioxidant that protects long-chain polyunsaturated fatty acids (EPA/DHA) from lipid peroxidation.",
+      "benefit": "Prevents oxidation of EPA/DHA, ensuring optimal anti-inflammatory benefit.",
+      "optimal_timing": "Take together with food.",
+      "score_bonus": 4
+    }
+  },
+  "quercetin": {
+    "bromelain": {
+      "type": "ENHANCEMENT",
+      "mechanism": "Bromelain is a proteolytic enzyme that enhances the intestinal absorption and systemic anti-inflammatory effect of quercetin.",
+      "benefit": "Enhanced anti-inflammatory and seasonal allergy relief.",
+      "optimal_timing": "Take together on an empty stomach or with a light meal.",
+      "score_bonus": 4
+    },
+    "vitamin_c_ascorbic_acid": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin C regenerates oxidized quercetin back to its active antioxidant form, creating a synergistic cycle.",
+      "benefit": "Extended antioxidant protection and immune support.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    },
+    "zinc_picolinate": {
+      "type": "SYNERGY",
+      "mechanism": "Quercetin acts as a zinc ionophore, facilitating the transport of zinc ions across the cell membrane into the cytosol.",
+      "benefit": "Intracellular zinc accumulation, which inhibits viral replication enzymes.",
+      "optimal_timing": "Take together with a meal.",
+      "score_bonus": 5
+    }
+  },
+  "probiotic_lactobacillus_acidophilus": {
+    "inulin_fiber": {
+      "type": "SYNERGY",
+      "mechanism": "Inulin is a prebiotic fiber that selectively feeds beneficial Lactobacillus, promoting colonization.",
+      "benefit": "Enhanced probiotic colonization and gut microbiome balance.",
+      "optimal_timing": "Take together with water.",
+      "score_bonus": 5
+    }
+  },
+  "l_theanine": {
+    "coffee_black": {
+      "type": "SYNERGY",
+      "mechanism": "L-theanine reduces the vasoconstrictive and jittery side effects of caffeine while synergizing with its cognitive performance benefits.",
+      "benefit": "Calm, clean focus without caffeine crashes or jitters.",
+      "optimal_timing": "Take L-theanine with your coffee.",
+      "score_bonus": 4
+    }
+  },
+  "collagen_peptides": {
+    "vitamin_c_ascorbic_acid": {
+      "type": "SYNERGY",
+      "mechanism": "Vitamin C is a required cofactor for prolyl hydroxylase, which stabilizes the collagen triple helix.",
+      "benefit": "Optimal collagen synthesis for skin, joint, and bone health.",
+      "optimal_timing": "Take together.",
+      "score_bonus": 4
+    }
+  },
+  "astaxanthin": {
+    "lutein": {
+      "type": "SYNERGY",
+      "mechanism": "Complementary carotenoids that deposit in eye tissue, providing broad-spectrum blue light filtering and macular protection.",
+      "benefit": "Enhanced retinal health and visual comfort.",
+      "optimal_timing": "Take together with a meal containing fats.",
+      "score_bonus": 4
+    }
+  }
+}

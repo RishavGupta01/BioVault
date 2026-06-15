@@ -1,0 +1,8 @@
+{
+  "instruction_sets": [
+    "Always check context/core_meds.json and db/schema.ts before proposing any modifications to entity resolutions.",
+    "Do not import external server-side database packages or centralized state synchronization mechanisms.",
+    "Ensure every state modification pipeline is checked against the 16ms frame rule utilizing optimized local mutations.",
+    "All API responses inside the app router layer must pass through an explicit Zod validation schema block prior to any database execution states."
+  ]
+}
