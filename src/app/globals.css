@@ -1294,7 +1294,8 @@ img {
   background: var(--color-surface);
   border: 1px solid var(--color-outline-variant);
   display: flex;
-  gap: var(--spacing-md);
+  flex-direction: column;
+  gap: var(--spacing-sm);
   align-items: flex-start;
 }
 
