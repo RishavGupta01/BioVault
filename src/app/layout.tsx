@@ -20,13 +20,22 @@ export const metadata: Metadata = {
     'interaction',
     'clinical',
     'wellness',
+    'safety',
+    'PWA'
   ],
-  authors: [{ name: 'BioVault' }],
+  authors: [{ name: 'BioVault Team' }],
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'BioVault — Clinical Interaction Engine',
     description:
       'Track medications, supplements, and food interactions with clinical-grade accuracy.',
     type: 'website',
+    url: 'https://biovault.vercel.app',
+    siteName: 'BioVault',
   },
 };
 
@@ -45,6 +54,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
