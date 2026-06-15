@@ -127,8 +127,13 @@ export async function POST(request: Request) {
         rawResponse = await callGrok(query);
       } catch (grokError) {
         console.error('Both LLMs failed:', grokError);
+        const geminiMsg = geminiError instanceof Error ? geminiError.message : String(geminiError);
+        const grokMsg = grokError instanceof Error ? grokError.message : String(grokError);
         return NextResponse.json(
-          { error: 'All LLM providers failed' },
+          { 
+            error: 'All LLM providers failed',
+            details: `Gemini: ${geminiMsg} | Grok: ${grokMsg}`
+          },
           { status: 503 }
         );
       }

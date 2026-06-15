@@ -111,11 +111,18 @@ export async function POST(request: Request) {
     // Gemini → Grok failover
     try {
       rawResponse = await callGemini(prompt);
-    } catch {
+    } catch (geminiError) {
+      console.warn('Gemini failed, falling back to Grok:', geminiError);
       try {
         rawResponse = await callGrok(prompt);
-      } catch {
-        return NextResponse.json({ error: 'All LLM providers failed' }, { status: 503 });
+      } catch (grokError) {
+        console.error('Both LLMs failed:', grokError);
+        const geminiMsg = geminiError instanceof Error ? geminiError.message : String(geminiError);
+        const grokMsg = grokError instanceof Error ? grokError.message : String(grokError);
+        return NextResponse.json({ 
+          error: 'All LLM providers failed',
+          details: `Gemini: ${geminiMsg} | Grok: ${grokMsg}`
+        }, { status: 503 });
       }
     }
 

@@ -32,6 +32,7 @@ export default function DetectivePage() {
     severity: string;
   } | null>(null);
   const [isAiLoading, setIsAiLoading] = useState(false);
+  const [aiError, setAiError] = useState<string>('');
 
   const getActiveSymptomText = () => {
     if (selectedSymptom === 'custom') {
@@ -43,6 +44,7 @@ export default function DetectivePage() {
   const handleInvestigate = async () => {
     setIsAnalyzing(true);
     setAiResult(null);
+    setAiError('');
     setResult(null);
     const symptomText = getActiveSymptomText();
 
@@ -52,6 +54,7 @@ export default function DetectivePage() {
 
       if (diagnostic.needs_ai_analysis && diagnostic.recent_items.length > 0) {
         setIsAiLoading(true);
+        setAiError('');
         try {
           const res = await fetch('/api/analyze-symptoms', {
             method: 'POST',
@@ -69,9 +72,15 @@ export default function DetectivePage() {
           });
           if (res.ok) {
             setAiResult(await res.json());
+          } else {
+            const errData = await res.json().catch(() => ({}));
+            setAiError(errData.error 
+              ? `${errData.error}${errData.details ? `: ${errData.details}` : ''}` 
+              : `AI Analysis returned status ${res.status}`);
           }
         } catch (err) {
           console.error("AI Clinical analysis failed:", err);
+          setAiError(err instanceof Error ? err.message : 'AI Clinical analysis failed');
         } finally {
           setIsAiLoading(false);
         }
@@ -271,6 +280,22 @@ export default function DetectivePage() {
                     <p style={{ fontWeight: 500 }}>Executing AI Clinical Synthesis...</p>
                     <p style={{ fontSize: 'var(--font-caption)', color: 'var(--color-on-surface-variant)', marginTop: 8 }}>
                       Cross-referencing timeline against PubMed & FDA pharmacological database for "{getActiveSymptomText()}" correlations.
+                    </p>
+                  </GlassCard>
+                )}
+
+                {/* AI clinical error */}
+                {aiError && (
+                  <GlassCard style={{ padding: 20, borderLeft: '4px solid var(--color-critical)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8, color: 'var(--color-critical)' }}>
+                      <span className="material-symbols-outlined">error</span>
+                      <p style={{ fontWeight: 600 }}>AI Clinical Analysis Unavailable</p>
+                    </div>
+                    <p style={{ fontSize: 'var(--font-caption)', color: 'var(--color-on-surface-variant)', lineHeight: 1.5 }}>
+                      {aiError}
+                    </p>
+                    <p style={{ fontSize: 'var(--font-caption)', color: 'var(--color-outline)', marginTop: 12, lineHeight: 1.4 }}>
+                      Please ensure your API keys (`GEMINI_API_KEY` or `GROK_API_KEY`) are correctly set in your environment configuration.
                     </p>
                   </GlassCard>
                 )}

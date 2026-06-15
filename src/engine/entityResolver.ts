@@ -86,10 +86,11 @@ export async function resolveEntity(
     });
 
     if (!response.ok) {
-      return {
-        error: `Edge API returned ${response.status}`,
-        source: 'edge_error',
-      };
+      const errData = await response.json().catch(() => ({}));
+      const errMsg = errData.error 
+        ? `${errData.error}${errData.details ? `: ${errData.details}` : ''}` 
+        : `Edge API returned ${response.status}`;
+      throw new Error(errMsg);
     }
 
     const rawData: unknown = await response.json();
@@ -154,7 +155,7 @@ export async function resolveEntity(
     }
 
     return {
-      error: `Network error: ${networkError instanceof Error ? networkError.message : 'Unknown'}`,
+      error: networkError instanceof Error ? networkError.message : 'Unknown network/server error',
       source: 'all_failed',
     };
   }
