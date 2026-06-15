@@ -32,8 +32,8 @@ Rules:
 
 // ─── Gemini API Call ─────────────────────────────────────────────────────────
 
-async function callGemini(query: string): Promise<string> {
-  const apiKey = process.env.GEMINI_API_KEY;
+async function callGemini(query: string, customApiKey?: string | null): Promise<string> {
+  const apiKey = customApiKey || process.env.GEMINI_API_KEY;
   if (!apiKey) throw new Error('GEMINI_API_KEY not configured');
 
   const response = await fetch(
@@ -69,8 +69,8 @@ async function callGemini(query: string): Promise<string> {
 
 // ─── Grok (xAI) API Call ─────────────────────────────────────────────────────
 
-async function callGrok(query: string): Promise<string> {
-  const apiKey = process.env.GROK_API_KEY;
+async function callGrok(query: string, customApiKey?: string | null): Promise<string> {
+  const apiKey = customApiKey || process.env.GROK_API_KEY;
   if (!apiKey) throw new Error('GROK_API_KEY not configured');
 
   const response = await fetch('https://api.x.ai/v1/chat/completions', {
@@ -116,15 +116,17 @@ export async function POST(request: Request) {
     }
 
     const { query } = parseResult.data;
+    const customGeminiKey = request.headers.get('x-gemini-api-key');
+    const customGrokKey = request.headers.get('x-grok-api-key');
     let rawResponse: string;
 
     // Multi-LLM failover: Gemini → Grok
     try {
-      rawResponse = await callGemini(query);
+      rawResponse = await callGemini(query, customGeminiKey);
     } catch (geminiError) {
       console.warn('Gemini failed, falling back to Grok:', geminiError);
       try {
-        rawResponse = await callGrok(query);
+        rawResponse = await callGrok(query, customGrokKey);
       } catch (grokError) {
         console.error('Both LLMs failed:', grokError);
         const geminiMsg = geminiError instanceof Error ? geminiError.message : String(geminiError);

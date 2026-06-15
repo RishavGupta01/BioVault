@@ -15,6 +15,12 @@ export default function SettingsPage() {
   const [isWiping, setIsWiping] = useState(false);
   const [wiped, setWiped] = useState(false);
 
+  const [geminiKey, setGeminiKey] = useState('');
+  const [grokKey, setGrokKey] = useState('');
+  const [showGemini, setShowGemini] = useState(false);
+  const [showGrok, setShowGrok] = useState(false);
+  const [savedSuccess, setSavedSuccess] = useState(false);
+
   useEffect(() => {
     async function loadStats() {
       const tc = await db.user_timeline.count();
@@ -26,6 +32,32 @@ export default function SettingsPage() {
     }
     loadStats();
   }, [wiped]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setGeminiKey(localStorage.getItem('user_gemini_api_key') || '');
+      setGrokKey(localStorage.getItem('user_grok_api_key') || '');
+    }
+  }, []);
+
+  const handleSaveKeys = () => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('user_gemini_api_key', geminiKey.trim());
+      localStorage.setItem('user_grok_api_key', grokKey.trim());
+      setSavedSuccess(true);
+      setTimeout(() => setSavedSuccess(false), 3000);
+    }
+  };
+
+  const handleClearKeys = () => {
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('user_gemini_api_key');
+      localStorage.removeItem('user_grok_api_key');
+      setGeminiKey('');
+      setGrokKey('');
+      alert("API keys successfully removed from your local storage.");
+    }
+  };
 
   // Export local DB as JSON
   const handleExport = async () => {
@@ -171,6 +203,117 @@ export default function SettingsPage() {
                 <p style={{ fontSize: 24, fontWeight: 700, color: 'var(--color-warning)' }}>{cacheCount}</p>
                 <p style={{ fontSize: 'var(--font-caption)', color: 'var(--color-on-surface-variant)', marginTop: 4 }}>Resolved Entities</p>
               </div>
+            </div>
+          </GlassCard>
+
+          {/* AI API Credentials */}
+          <GlassCard style={{ padding: 24 }}>
+            <h3 style={{ fontSize: 'var(--font-h3)', fontWeight: 600, marginBottom: 10 }}>AI API Credentials (Optional)</h3>
+            <p style={{ fontSize: 'var(--font-caption)', color: 'var(--color-on-surface-variant)', marginBottom: 20, lineHeight: 1.5 }}>
+              If the default server-side API keys are exhausted, rate-limited, or unconfigured, you can configure your own personal keys. These are saved purely inside your browser's local storage and passed securely via transit headers for stateless AI clinical calculations.
+            </p>
+            
+            <div style={{ display: 'grid', gap: 16, marginBottom: 20 }}>
+              {/* Gemini API Key */}
+              <div>
+                <label style={{ display: 'block', fontSize: 'var(--font-caption)', fontWeight: 600, marginBottom: 6 }}>Gemini API Key</label>
+                <div style={{ display: 'flex', gap: 8 }}>
+                  <input
+                    type={showGemini ? 'text' : 'password'}
+                    value={geminiKey}
+                    onChange={(e) => setGeminiKey(e.target.value)}
+                    placeholder="Enter your Gemini API key (starts with AIzaSy...)"
+                    style={{
+                      flex: 1,
+                      padding: '10px 14px',
+                      borderRadius: 'var(--radius-sm)',
+                      background: 'rgba(255, 255, 255, 0.03)',
+                      border: '1px solid var(--color-outline-variant)',
+                      color: 'var(--color-on-surface)',
+                      fontSize: 'var(--font-caption)',
+                      fontFamily: 'monospace'
+                    }}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowGemini(!showGemini)}
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid var(--color-outline-variant)',
+                      color: 'var(--color-on-surface-variant)',
+                      borderRadius: 'var(--radius-sm)',
+                      width: 42,
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}
+                  >
+                    <span className="material-symbols-outlined" style={{ fontSize: 20 }}>
+                      {showGemini ? 'visibility_off' : 'visibility'}
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Grok API Key */}
+              <div>
+                <label style={{ display: 'block', fontSize: 'var(--font-caption)', fontWeight: 600, marginBottom: 6 }}>Grok API Key</label>
+                <div style={{ display: 'flex', gap: 8 }}>
+                  <input
+                    type={showGrok ? 'text' : 'password'}
+                    value={grokKey}
+                    onChange={(e) => setGrokKey(e.target.value)}
+                    placeholder="Enter your Grok API key (starts with xai-...)"
+                    style={{
+                      flex: 1,
+                      padding: '10px 14px',
+                      borderRadius: 'var(--radius-sm)',
+                      background: 'rgba(255, 255, 255, 0.03)',
+                      border: '1px solid var(--color-outline-variant)',
+                      color: 'var(--color-on-surface)',
+                      fontSize: 'var(--font-caption)',
+                      fontFamily: 'monospace'
+                    }}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowGrok(!showGrok)}
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid var(--color-outline-variant)',
+                      color: 'var(--color-on-surface-variant)',
+                      borderRadius: 'var(--radius-sm)',
+                      width: 42,
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}
+                  >
+                    <span className="material-symbols-outlined" style={{ fontSize: 20 }}>
+                      {showGrok ? 'visibility_off' : 'visibility'}
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <Button variant="primary" icon="key" onClick={handleSaveKeys}>
+                Save API Credentials
+              </Button>
+              {(geminiKey || grokKey) && (
+                <Button variant="ghost" icon="key_off" onClick={handleClearKeys}>
+                  Clear Saved Keys
+                </Button>
+              )}
+              {savedSuccess && (
+                <span style={{ color: 'var(--color-success)', fontSize: 'var(--font-caption)', fontWeight: 500, display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <span className="material-symbols-outlined" style={{ fontSize: 16 }}>check_circle</span>
+                  Saved successfully!
+                </span>
+              )}
             </div>
           </GlassCard>
 

@@ -32,8 +32,8 @@ Be clinically accurate. Focus on pharmacological mechanisms relevant to the repo
 
 // ─── LLM Calls ──────────────────────────────────────────────────────────────
 
-async function callGemini(prompt: string): Promise<string> {
-  const apiKey = process.env.GEMINI_API_KEY;
+async function callGemini(prompt: string, customApiKey?: string | null): Promise<string> {
+  const apiKey = customApiKey || process.env.GEMINI_API_KEY;
   if (!apiKey) throw new Error('GEMINI_API_KEY not configured');
 
   const response = await fetch(
@@ -57,8 +57,8 @@ async function callGemini(prompt: string): Promise<string> {
   return data?.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
 }
 
-async function callGrok(prompt: string): Promise<string> {
-  const apiKey = process.env.GROK_API_KEY;
+async function callGrok(prompt: string, customApiKey?: string | null): Promise<string> {
+  const apiKey = customApiKey || process.env.GROK_API_KEY;
   if (!apiKey) throw new Error('GROK_API_KEY not configured');
 
   const response = await fetch('https://api.x.ai/v1/chat/completions', {
@@ -106,15 +106,17 @@ export async function POST(request: Request) {
 
     const prompt = `Patient reports: "${symptom}"\n\nItems consumed in the last 3 hours:\n${itemList}\n\nAnalyze potential causes of the reported symptom.`;
 
+    const customGeminiKey = request.headers.get('x-gemini-api-key');
+    const customGrokKey = request.headers.get('x-grok-api-key');
     let rawResponse: string;
 
     // Gemini → Grok failover
     try {
-      rawResponse = await callGemini(prompt);
+      rawResponse = await callGemini(prompt, customGeminiKey);
     } catch (geminiError) {
       console.warn('Gemini failed, falling back to Grok:', geminiError);
       try {
-        rawResponse = await callGrok(prompt);
+        rawResponse = await callGrok(prompt, customGrokKey);
       } catch (grokError) {
         console.error('Both LLMs failed:', grokError);
         const geminiMsg = geminiError instanceof Error ? geminiError.message : String(geminiError);

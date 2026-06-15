@@ -56,9 +56,17 @@ export default function DetectivePage() {
         setIsAiLoading(true);
         setAiError('');
         try {
+          const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+          if (typeof window !== 'undefined') {
+            const userGemini = localStorage.getItem('user_gemini_api_key');
+            const userGrok = localStorage.getItem('user_grok_api_key');
+            if (userGemini) headers['x-gemini-api-key'] = userGemini;
+            if (userGrok) headers['x-grok-api-key'] = userGrok;
+          }
+
           const res = await fetch('/api/analyze-symptoms', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers,
             body: JSON.stringify({
               profile_id: activeProfileId,
               symptom: symptomText,
